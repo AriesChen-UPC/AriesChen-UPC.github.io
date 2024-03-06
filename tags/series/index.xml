@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Blowfish</title>
+    <link>acgptlab.com/tags/series/</link>
+    <description>Recent content in Series on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Sun, 09 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="acgptlab.com/tags/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Series</title>
+      <link>acgptlab.com/docs/series/</link>
+      <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>acgptlab.com/docs/series/</guid>
+      <description>Blowfish provides a feature to group a set of articles together under a &amp;ldquo;series&amp;rdquo;.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="acgptlab.com/docs/series/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

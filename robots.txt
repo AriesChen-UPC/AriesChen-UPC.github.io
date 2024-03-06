@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: acgptlab.com/sitemap.xml

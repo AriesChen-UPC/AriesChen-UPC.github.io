@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Blowfish</title>
+    <link>acgptlab.com/authors/</link>
+    <description>Recent content in Authors on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="acgptlab.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nunocoracao</title>
+      <link>acgptlab.com/authors/nunocoracao/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>acgptlab.com/authors/nunocoracao/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Secondauthor</title>
+      <link>acgptlab.com/authors/secondauthor/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>acgptlab.com/authors/secondauthor/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
