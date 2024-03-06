@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="acgptlab.com/images/favicon.png" />
+<title>BERT | Hugo ʕ•ᴥ•ʔ Bear Blog</title>
+<meta name="title" content="BERT" />
+<meta name="description" content="Bidirectional Encoder Representations from Transformers." />
+<meta name="keywords" content="AI,Transformer," />
+
+
+<meta property="og:title" content="BERT" />
+<meta property="og:description" content="Bidirectional Encoder Representations from Transformers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="acgptlab.com/bert/" /><meta property="og:image" content="acgptlab.com/images/share.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-17T00:00:00+00:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="acgptlab.com/images/share.png" /><meta name="twitter:title" content="BERT"/>
+<meta name="twitter:description" content="Bidirectional Encoder Representations from Transformers."/>
+
+
+
+<meta itemprop="name" content="BERT">
+<meta itemprop="description" content="Bidirectional Encoder Representations from Transformers."><meta itemprop="datePublished" content="2023-04-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="510"><meta itemprop="image" content="acgptlab.com/images/share.png" />
+<meta itemprop="keywords" content="AI,Transformer," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/acgptlab.com/" class="title">
+  <h2>Hugo ʕ•ᴥ•ʔ Bear Blog</h2>
+</a>
+<nav><a href="/acgptlab.com/">Home</a>
+
+<a href="acgptlab.com/life/">Life</a>
+
+<a href="acgptlab.com/study/">Study</a>
+
+
+<a href="/acgptlab.com/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>BERT</h1>
+<p>
+  <i>
+    <time datetime='2023-04-17' pubdate>
+      17 Apr, 2023
+    </time>
+  </i>
+</p>
+
+<content>
+  <h5 id="bert-bidirectional-encoder-representations-from-transformers">BERT (Bidirectional Encoder Representations from Transformers)</h5>
+<p>BERT, which stands for Bidirectional Encoder Representations from Transformers, is a state-of-the-art machine learning model developed for natural language processing tasks. It was introduced by researchers at Google AI Language in 2018.</p>
+<h5 id="key-features">Key Features:</h5>
+<ol>
+<li>
+<p><strong>Bidirectional Context</strong>: Unlike traditional models that either read text from left to right or right to left, BERT reads text bidirectionally. This allows the model to understand the context of each word in a sentence more effectively.</p>
+</li>
+<li>
+<p><strong>Transformers Architecture</strong>: BERT leverages the Transformer architecture, which uses attention mechanisms to capture contextual information from the entire text, rather than just the surrounding words.</p>
+</li>
+<li>
+<p><strong>Pre-training on Large Datasets</strong>: BERT is pre-trained on two tasks: Masked Language Model (MLM) and Next Sentence Prediction (NSP). For MLM, random words in a sentence are masked, and the model is trained to predict them. For NSP, the model is trained to predict if one sentence follows another in a given text.</p>
+</li>
+<li>
+<p><strong>Fine-tuning for Specific Tasks</strong>: After pre-training, BERT can be fine-tuned on a smaller dataset for specific tasks like question answering, sentiment analysis, and named entity recognition.</p>
+</li>
+</ol>
+<h5 id="why-bert-is-revolutionary">Why BERT is Revolutionary:</h5>
+<ul>
+<li>
+<p><strong>Versatility</strong>: BERT serves as a &ldquo;Swiss army knife&rdquo; for many NLP tasks. Instead of training separate models for each task, BERT can be fine-tuned to excel in multiple tasks.</p>
+</li>
+<li>
+<p><strong>Deep Understanding</strong>: Due to its bidirectional nature, BERT captures deep semantic meanings of words. For instance, it can differentiate words with multiple meanings based on context.</p>
+</li>
+<li>
+<p><strong>State-of-the-Art Performance</strong>: BERT has set new benchmarks in several NLP tasks, outperforming previous models.</p>
+</li>
+</ul>
+<h5 id="practical-applications">Practical Applications:</h5>
+<ol>
+<li><strong>Sentiment Analysis</strong>: Determining if a movie review is positive or negative.</li>
+<li><strong>Question Answering</strong>: Helping chatbots provide accurate answers.</li>
+<li><strong>Text Prediction</strong>: Predicting the next word in a sentence, as seen in Gmail.</li>
+<li><strong>Text Generation</strong>: Writing articles based on a few input sentences.</li>
+<li><strong>Summarization</strong>: Providing concise summaries of long texts.</li>
+<li><strong>Polysemy Resolution</strong>: Differentiating words with multiple meanings based on context.</li>
+</ol>
+<h5 id="how-bert-works">How BERT Works:</h5>
+<ul>
+<li>
+<p><strong>Masked Language Model (MLM)</strong>: During pre-training, BERT uses MLM where it randomly masks words in a sentence and tries to predict them based on their context. This bidirectional training helps BERT understand the context deeply.</p>
+</li>
+<li>
+<p><strong>Next Sentence Prediction (NSP)</strong>: BERT is also trained to determine if one sentence logically follows another, helping it understand the relationship between sentences.</p>
+</li>
+<li>
+<p><strong>Transformers and Attention</strong>: The Transformer architecture allows BERT to focus on different parts of a sentence to capture contextual information effectively. The attention mechanism in Transformers assigns different weights to different words, indicating their importance in the sentence.</p>
+</li>
+</ul>
+<h5 id="model-variants">Model Variants:</h5>
+<p>There are different variants of BERT based on its size and the amount of data it was trained on. The two primary versions are BERTbase and BERTlarge, with BERTlarge having more Transformer layers, a larger hidden size, and more attention heads, making it more powerful but also more computationally intensive.</p>
+<p>In conclusion, BERT has revolutionized the field of NLP by providing a versatile and powerful model that captures the deep contextual meaning of words. Its bidirectional training, combined with the Transformer architecture, allows it to achieve state-of-the-art performance in various NLP tasks.</p>
+<p><a href="https://machinelearningmastery.com/a-brief-introduction-to-bert/">Source</a> and <a href="https://huggingface.co/blog/bert-101">Source</a></p>
+
+</content>
+<p>
+  
+  <a href="acgptlab.com/blog/ai/">#AI</a>
+  
+  <a href="acgptlab.com/blog/transformer/">#Transformer</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
