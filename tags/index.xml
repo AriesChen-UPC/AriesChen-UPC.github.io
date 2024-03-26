@@ -1,0 +1,56 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - 我的全新 Hugo 网站</title>
+        <link>https://AriesChen-UPC.github.io/tags/</link>
+        <description>Tags - 标签 - 我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Preview</title>
+    <link>https://AriesChen-UPC.github.io/tags/preview/</link>
+    <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/preview/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Shortcodes</title>
+    <link>https://AriesChen-UPC.github.io/tags/shortcodes/</link>
+    <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/shortcodes/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Tag-6</title>
+    <link>https://AriesChen-UPC.github.io/tags/tag-6/</link>
+    <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/tag-6/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Contribute</title>
+    <link>https://AriesChen-UPC.github.io/tags/contribute/</link>
+    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/contribute/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MATLAB</title>
+    <link>https://AriesChen-UPC.github.io/tags/matlab/</link>
+    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/matlab/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Program</title>
+    <link>https://AriesChen-UPC.github.io/tags/program/</link>
+    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/program/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Python</title>
+    <link>https://AriesChen-UPC.github.io/tags/python/</link>
+    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>作者</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/python/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
