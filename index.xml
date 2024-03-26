@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jane - A super concise theme for Hugo</title>
+    <link>acgptlab.com/</link>
+    <description>Recent content on Jane - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>chenlijiong1105@gmail.com (AriesChen)</managingEditor>
+    <webMaster>chenlijiong1105@gmail.com (AriesChen)</webMaster>
+    <lastBuildDate>Tue, 26 Mar 2024 09:00:00 +0800</lastBuildDate>
+    
+        <atom:link href="acgptlab.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aries Chen</title>
+      <link>acgptlab.com/post/jane-theme-preview/</link>
+      <pubDate>Tue, 26 Mar 2024 09:00:00 +0800</pubDate>
+      <author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/post/jane-theme-preview/</guid>
+      
+        <description>&lt;p&gt;Hello! My name is &lt;strong&gt;Aries Chen&lt;/strong&gt;, and I&amp;rsquo;m a dedicated student at the &lt;strong&gt;China University of Petroleum&lt;/strong&gt;, specializing in &lt;strong&gt;Geophysics&lt;/strong&gt;. My academic journey is deeply rooted in the exploration of the earth&amp;rsquo;s physical properties, but I&amp;rsquo;ve recently taken a keen interest in the realm of &lt;strong&gt;artificial intelligence&lt;/strong&gt;. I&amp;rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.&lt;/p&gt;
+&lt;p&gt;Outside the academic world, I have a profound passion for literature and endurance sports, particularly marathon running. Reading allows me to travel through different worlds and ideas, broadening my perspective and fueling my creativity. Running, on the other hand, offers me a unique challenge and the opportunity to push my limits. Participating in a full marathon annually has become a tradition for me, symbolizing resilience, persistence, and the continuous pursuit of personal excellence.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>acgptlab.com/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      <author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Dictionary Data Type in MATLAB</title>
+      <link>acgptlab.com/post/docs/dictionary-data-type-in-matlab/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      <author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/post/docs/dictionary-data-type-in-matlab/</guid>
+      
+        <description>&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;em&gt;dictionary&lt;/em&gt; is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as &lt;em&gt;values&lt;/em&gt;, which can be accessed using corresponding unique &lt;em&gt;keys&lt;/em&gt;. Each pair of keys and values is an &lt;em&gt;entry&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work. In the version R2022b, the official version is coming. Let’s have a look.&lt;/p&gt;
+&lt;h4 id=&#34;functions&#34;&gt;Functions&lt;/h4&gt;
+&lt;p&gt;There are some functions in the dictionary object, like entries, keys, values, types, numEntries, isConfigured, and isKey. The content of each function is as felow:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Functions&lt;/th&gt;
+&lt;th&gt;Content&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;entries&lt;/td&gt;
+&lt;td&gt;Key-value pairs of dictionary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keys&lt;/td&gt;
+&lt;td&gt;Keys of dictionary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;values&lt;/td&gt;
+&lt;td&gt;Values of dictionary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;types&lt;/td&gt;
+&lt;td&gt;Types of dictionary keys and values&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;numEntries&lt;/td&gt;
+&lt;td&gt;Number of key-value pairs in dictionary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;isConfigured&lt;/td&gt;
+&lt;td&gt;Determine if dictionary has types assigned to keys and values&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;isKey&lt;/td&gt;
+&lt;td&gt;Determine if dictionary contains key&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;syntax&#34;&gt;Syntax&lt;/h4&gt;
+&lt;p&gt;The syntax is easy just like in Python and other languages.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d = dictionary(keys,values)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d = dictionary(k1,v1,&lt;span style=&#34;color:#75715e&#34;&gt;...,kN,vN)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d = dictionary
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s take an example. &lt;code&gt;d = dictionary(keys, values)&lt;/code&gt; creates a dictionary with specified keys and values. The resulting dictionary &lt;code&gt;d&lt;/code&gt; is a 1-by-1 scalar object. If multiple values are assigned to the same key, then only the last of those values are assigned. New assignments to an existing key overwrite the value for that entry.&lt;/p&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;I use the dictionary data type to store the serial number and the group label of a seismograph. This helps me to sort and find the information more conveniently.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;instrGroupSerial = dictionary(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000037&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000050&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000059&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000064&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000066&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000099&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;A6&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...                     &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000102&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;B1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000105&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;B2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000106&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;B3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000111&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;B4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000342&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;B5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000343&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;B6&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...                     &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000345&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000351&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000358&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000372&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000397&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000400&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;C6&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...                     &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000425&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;D1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000446&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;D2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000450&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;D3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000458&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;D4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000472&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;D5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000587&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;D6&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...                     &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000075&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;E1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000080&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;E2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000360&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;E3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000894&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;E4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000904&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;E5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590000964&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;E6&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...                     &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001101&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;F1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001170&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;F2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001172&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;F3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001184&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;F4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001186&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;F5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001231&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;F6&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...                     &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001240&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;G1&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001243&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;G2&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001300&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;G3&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001347&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;G4&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#75715e&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001366&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;G5&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;590001379&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;G6&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you are interested in the dictionary data type, have a try!&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

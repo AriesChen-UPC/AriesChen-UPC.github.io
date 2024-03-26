@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jane - A super concise theme for Hugo</title>
+    <link>acgptlab.com/tags/</link>
+    <description>Recent content in Tags on Jane - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>chenlijiong1105@gmail.com (AriesChen)</managingEditor>
+    <webMaster>chenlijiong1105@gmail.com (AriesChen)</webMaster>
+    <lastBuildDate>Tue, 26 Mar 2024 09:05:00 +0800</lastBuildDate>
+    <atom:link href="acgptlab.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preview</title>
+      <link>acgptlab.com/tags/preview/</link>
+      <pubDate>Tue, 26 Mar 2024 09:00:00 +0800</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/preview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>acgptlab.com/tags/shortcodes/</link>
+      <pubDate>Tue, 26 Mar 2024 09:00:00 +0800</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag-6</title>
+      <link>acgptlab.com/tags/tag-6/</link>
+      <pubDate>Tue, 26 Mar 2024 09:00:00 +0800</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/tag-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contribute</title>
+      <link>acgptlab.com/tags/contribute/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/contribute/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MATLAB</title>
+      <link>acgptlab.com/tags/matlab/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/matlab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Program</title>
+      <link>acgptlab.com/tags/program/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/program/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>acgptlab.com/tags/python/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/tags/python/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

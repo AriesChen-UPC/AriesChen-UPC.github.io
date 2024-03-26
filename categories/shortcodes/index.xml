@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcodes on Jane - A super concise theme for Hugo</title>
+    <link>acgptlab.com/categories/shortcodes/</link>
+    <description>Recent content in Shortcodes on Jane - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>chenlijiong1105@gmail.com (AriesChen)</managingEditor>
+    <webMaster>chenlijiong1105@gmail.com (AriesChen)</webMaster>
+    <lastBuildDate>Tue, 26 Mar 2024 09:05:00 +0800</lastBuildDate>
+    <atom:link href="acgptlab.com/categories/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aries Chen</title>
+      <link>acgptlab.com/post/jane-theme-preview/</link>
+      <pubDate>Tue, 26 Mar 2024 09:00:00 +0800</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/post/jane-theme-preview/</guid>
+      <description>Hello! My name is Aries Chen, and I&amp;rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics. My academic journey is deeply rooted in the exploration of the earth&amp;rsquo;s physical properties, but I&amp;rsquo;ve recently taken a keen interest in the realm of artificial intelligence. I&amp;rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.</description>
+    </item>
+  </channel>
+</rss>

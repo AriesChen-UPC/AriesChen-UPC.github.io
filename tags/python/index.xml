@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Jane - A super concise theme for Hugo</title>
+    <link>acgptlab.com/tags/python/</link>
+    <description>Recent content in Python on Jane - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>chenlijiong1105@gmail.com (AriesChen)</managingEditor>
+    <webMaster>chenlijiong1105@gmail.com (AriesChen)</webMaster>
+    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="acgptlab.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dictionary Data Type in MATLAB</title>
+      <link>acgptlab.com/post/docs/dictionary-data-type-in-matlab/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><author>chenlijiong1105@gmail.com (AriesChen)</author>
+      <guid>acgptlab.com/post/docs/dictionary-data-type-in-matlab/</guid>
+      <description>A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.&#xA;Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.</description>
+    </item>
+  </channel>
+</rss>
