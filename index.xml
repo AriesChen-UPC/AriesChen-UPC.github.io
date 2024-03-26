@@ -1,22 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>我的全新 Hugo 网站</title>
+        <title>AriesChen&#39;s Blog</title>
         <link>https://AriesChen-UPC.github.io/</link>
-        <description>我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate>
+        <description>AriesChen&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate>
             <atom:link href="https://AriesChen-UPC.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Aries Chen</title>
-    <link>https://AriesChen-UPC.github.io/post/jane-theme-preview/</link>
+    <link>https://AriesChen-UPC.github.io/post/arieschen-preview/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
-        <name>Typora</name>
-    </author><guid>https://AriesChen-UPC.github.io/post/jane-theme-preview/</guid>
-    <description><![CDATA[Hello! My name is Aries Chen, and I&rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics. My academic journey is deeply rooted in the exploration of the earth&rsquo;s physical properties, but I&rsquo;ve recently taken a keen interest in the realm of artificial intelligence. I&rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.]]></description>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/arieschen-preview/</guid>
+    <description><![CDATA[Hello! My name is Aries Chen, and I&rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics.
+My academic journey is deeply rooted in the exploration of the earth&rsquo;s physical properties, but I&rsquo;ve recently taken a keen interest in the realm of Artificial Intelligence.
+I&rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.]]></description>
 </item><item>
     <title>Dictionary Data Type in MATLAB</title>
     <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>
     <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
-        <name>作者</name>
+        <name>Author</name>
     </author><guid>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</guid>
     <description><![CDATA[A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.
 Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.]]></description>

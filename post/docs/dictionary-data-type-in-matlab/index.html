@@ -1,12 +1,12 @@
 
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noodp" />
-    <title>Dictionary Data Type in MATLAB - 我的全新 Hugo 网站</title><meta
+    <title>Dictionary Data Type in MATLAB - AriesChen&#39;s Blog</title><meta
   name="Description"
   content=""
 /><meta property="og:title" content="Dictionary Data Type in MATLAB" />
@@ -21,16 +21,16 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
 Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work."/>
 <meta
   name="application-name"
-  content="我的全新 Hugo 网站"
+  content="AriesChen&#39;s Blog"
 />
 <meta
   name="apple-mobile-web-app-title"
-  content="我的全新 Hugo 网站"
+  content="AriesChen&#39;s Blog"
 />
 
 <meta name="theme-color" content="#f8f8f8" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/" /><link rel="next" href="https://AriesChen-UPC.github.io/post/jane-theme-preview/" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/" /><link rel="next" href="https://AriesChen-UPC.github.io/post/arieschen-preview/" />
 <link
       rel="stylesheet"
       href="/css/main.css"
@@ -76,16 +76,16 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "headline": "Dictionary Data Type in MATLAB",
-        "inLanguage": "zh-CN",
+        "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/"
         },"genre": "post","keywords": "MATLAB, Program, Python, Contribute","wordcount":  314 ,
         "url": "https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/","datePublished": "2022-10-15T00:00:00+00:00","dateModified": "2022-10-15T00:00:00+00:00","publisher": {
             "@type": "Organization",
-            "name": "作者"},"author": {
+            "name": "Author"},"author": {
                 "@type": "Person",
-                "name": "作者"
+                "name": "Author"
             },"description": ""
     }
     </script></head>
@@ -106,24 +106,24 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
     <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
   <div class="header-wrapper">
     <div class="header-title">
-      <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+      <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
     </div>
     <div class="menu">
       <div class="menu-inner"><a
             class="menu-item"
             href="/posts/"
             
-          > 文章
+          > Article
             </a><a
             class="menu-item"
             href="/tags/"
             
-          > 标签
+          > Tags
             </a><a
             class="menu-item"
             href="/categories/"
             
-          > 分类
+          > Categories
             </a><a
             class="menu-item"
             href="/about/"
@@ -141,7 +141,7 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
             </a><span class="menu-item delimiter"></span><a
             href="javascript:void(0);"
             class="menu-item theme-switch"
-            title="切换主题"
+            title="Switch Theme"
           >
             <i class="fas fa-adjust fa-fw"></i>
           </a></div>
@@ -151,7 +151,7 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
   <div class="header-container">
     <div class="header-wrapper">
       <div class="header-title">
-        <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
       </div>
       <div class="menu-toggle" id="menu-toggle-mobile">
         <span></span><span></span><span></span>
@@ -162,17 +162,17 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
           href="/posts/"
           title=""
           
-        >文章</a><a
+        >Article</a><a
           class="menu-item"
           href="/tags/"
           title=""
           
-        >标签</a><a
+        >Tags</a><a
           class="menu-item"
           href="/categories/"
           title=""
           
-        >分类</a><a
+        >Categories</a><a
           class="menu-item"
           href="/about/"
           title="About"
@@ -185,7 +185,7 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
         >docs</a><a
           href="javascript:void(0);"
           class="menu-item theme-switch"
-          title="切换主题"
+          title="Switch Theme"
         >
           <i class="fas fa-adjust fa-fw"></i>
         </a></div>
@@ -269,7 +269,7 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
 </div></div></div>
       </main><footer class="footer">
     <div class="footer-container"><div class="footer-line">
-          由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.124.1">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+          Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.124.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
         </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
             >&nbsp;<a
               href="/"
@@ -286,18 +286,18 @@ Before MATLAB R2022b, there is not an official dictionary data type. Though you 
         href="#back-to-top"
         id="back-to-top-button"
         class="fixed-button"
-        title="回到顶部"
+        title="Back to Top"
       >
         <i class="fas fa-arrow-up fa-fw"></i>
       </a><a
         href="#"
         id="view-comments"
         class="fixed-button"
-        title="查看评论"
+        title="View Comments"
       >
         <i class="fas fa-comment fa-fw"></i>
       </a>
-    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script
     type="text/javascript"
     src="/lib/clipboard/clipboard.min.js"
     

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 我的全新 Hugo 网站</title>
+    <title>Posts on AriesChen&#39;s Blog</title>
     <link>https://AriesChen-UPC.github.io/post/</link>
-    <description>Recent content in Posts on 我的全新 Hugo 网站</description>
+    <description>Recent content in Posts on AriesChen&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>en</language>
     <lastBuildDate>Tue, 26 Mar 2024 09:05:00 +0800</lastBuildDate>
     <atom:link href="https://AriesChen-UPC.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aries Chen</title>
-      <link>https://AriesChen-UPC.github.io/post/jane-theme-preview/</link>
+      <link>https://AriesChen-UPC.github.io/post/arieschen-preview/</link>
       <pubDate>Tue, 26 Mar 2024 09:00:00 +0800</pubDate>
-      <guid>https://AriesChen-UPC.github.io/post/jane-theme-preview/</guid>
-      <description>Hello! My name is Aries Chen, and I&amp;rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics. My academic journey is deeply rooted in the exploration of the earth&amp;rsquo;s physical properties, but I&amp;rsquo;ve recently taken a keen interest in the realm of artificial intelligence. I&amp;rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.</description>
+      <guid>https://AriesChen-UPC.github.io/post/arieschen-preview/</guid>
+      <description>Hello! My name is Aries Chen, and I&amp;rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics.&#xA;My academic journey is deeply rooted in the exploration of the earth&amp;rsquo;s physical properties, but I&amp;rsquo;ve recently taken a keen interest in the realm of Artificial Intelligence.&#xA;I&amp;rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.</description>
     </item>
     <item>
       <title>Dictionary Data Type in MATLAB</title>
