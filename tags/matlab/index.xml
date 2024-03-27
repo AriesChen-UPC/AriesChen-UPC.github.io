@@ -14,6 +14,14 @@ Requirement:
 Lidar Toolbox ROS Toolbox Optional:
 Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;.]]></description>
 </item><item>
+    <title>Add Interactive Tasks to a Live Script in MATLAB</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</link>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</guid>
+    <description><![CDATA[Live Editor tasks are simple point-and-click interfaces that can be added to a live script to perform a specific set of operations. You can add tasks to live scripts to explore parameters and automatically generate code. Use tasks to reduce development time, errors, and time spent plotting.
+We are familiar with Jupyter notebook in Python. In MATLAB, there are live scripts. MATLAB live scripts and live functions are interactive documents that combine MATLAB code with formatted text, equations, and images in a single environment called the Live Editor.]]></description>
+</item><item>
     <title>Dictionary Data Type in MATLAB</title>
     <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>

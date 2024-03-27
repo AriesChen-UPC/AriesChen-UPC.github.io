@@ -4,7 +4,7 @@
         <link>https://AriesChen-UPC.github.io/tags/</link>
         <description>Tags - Tag - AriesChen&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>“AI”</title>
+    <title>AI</title>
     <link>https://AriesChen-UPC.github.io/tags/ai/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
@@ -39,39 +39,39 @@
     </author><guid>https://AriesChen-UPC.github.io/tags/preview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Camera</title>
-    <link>https://AriesChen-UPC.github.io/tags/camera/</link>
-    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Computer Vision</title>
+    <link>https://AriesChen-UPC.github.io/tags/computer-vision/</link>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/camera/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/computer-vision/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Lidar</title>
-    <link>https://AriesChen-UPC.github.io/tags/lidar/</link>
-    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Python</title>
+    <link>https://AriesChen-UPC.github.io/tags/python/</link>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/lidar/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/python/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>MATLAB</title>
-    <link>https://AriesChen-UPC.github.io/tags/matlab/</link>
-    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Transformers</title>
+    <link>https://AriesChen-UPC.github.io/tags/transformers/</link>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/matlab/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/transformers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Rosbag</title>
-    <link>https://AriesChen-UPC.github.io/tags/rosbag/</link>
-    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Microtremor</title>
+    <link>https://AriesChen-UPC.github.io/tags/microtremor/</link>
+    <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/rosbag/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/microtremor/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Contribute</title>
-    <link>https://AriesChen-UPC.github.io/tags/contribute/</link>
-    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>NeRF</title>
+    <link>https://AriesChen-UPC.github.io/tags/nerf/</link>
+    <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/contribute/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/nerf/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

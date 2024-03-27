@@ -3,7 +3,23 @@
         <title>Development - Category - AriesChen&#39;s Blog</title>
         <link>https://AriesChen-UPC.github.io/categories/development/</link>
         <description>Development - Category - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/categories/development/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/categories/development/" rel="self" type="application/rss+xml" /><item>
+    <title>Harnessing Vision Transformers for Geological Radar Image Classification</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</link>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</guid>
+    <description><![CDATA[Geological exploration has long been a domain of meticulous study and analysis, where the subsurface secrets of the Earth are decoded from images that are as complex as they are enigmatic. One of the most powerful tools in this quest has been Ground Penetrating Radar (GPR), a technology that peers into the depths of the geological layers without a single shovel strike. But the interpretation of GPR data has remained a highly specialized skill — until now.]]></description>
+</item><item>
+    <title>Scene of Microtremor with NeRF</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</link>
+    <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</guid>
+    <description><![CDATA[Scene of Microtremor
+MicrotremorThe microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.
+To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors.]]></description>
+</item><item>
     <title>Extract Lidar and Camera Data from Rosbag File with MATLAB</title>
     <link>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</link>
     <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
@@ -13,6 +29,14 @@
 Requirement:
 Lidar Toolbox ROS Toolbox Optional:
 Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;.]]></description>
+</item><item>
+    <title>Add Interactive Tasks to a Live Script in MATLAB</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</link>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</guid>
+    <description><![CDATA[Live Editor tasks are simple point-and-click interfaces that can be added to a live script to perform a specific set of operations. You can add tasks to live scripts to explore parameters and automatically generate code. Use tasks to reduce development time, errors, and time spent plotting.
+We are familiar with Jupyter notebook in Python. In MATLAB, there are live scripts. MATLAB live scripts and live functions are interactive documents that combine MATLAB code with formatted text, equations, and images in a single environment called the Live Editor.]]></description>
 </item><item>
     <title>Dictionary Data Type in MATLAB</title>
     <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>

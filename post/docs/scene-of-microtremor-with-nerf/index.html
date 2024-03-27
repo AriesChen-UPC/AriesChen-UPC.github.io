@@ -1,0 +1,342 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noodp" />
+    <title>Scene of Microtremor with NeRF - AriesChen&#39;s Blog</title><meta
+  name="Description"
+  content="This is AriesChen&#39;s personal website"
+/><meta property="og:title" content="Scene of Microtremor with NeRF" />
+<meta property="og:description" content="Scene of Microtremor
+MicrotremorThe microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.
+To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-15T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Scene of Microtremor with NeRF"/>
+<meta name="twitter:description" content="Scene of Microtremor
+MicrotremorThe microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.
+To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors."/>
+      <meta name="twitter:site" content="@https://twitter.com/AriesChen_UPC"/>
+<meta
+  name="application-name"
+  content="AriesChen&#39;s Blog"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="AriesChen&#39;s Blog"
+/>
+
+<meta name="theme-color" content="#f8f8f8" /><meta name="twitter:creator" content="@https://twitter.com/AriesChen_UPC" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/" /><link rel="prev" href="https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/" /><link rel="next" href="https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/" />
+<link
+      rel="stylesheet"
+      href="/css/main.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/lib/normalize/normalize.min.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/color.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/style.min.css"
+      
+    /><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/fontawesome-free/all.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/fontawesome-free/all.min.css"
+        
+    /></noscript><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/animate/animate.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/animate/animate.min.css"
+        
+    /></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Scene of Microtremor with NeRF",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/"
+        },"genre": "post","keywords": "NeRF, AI, Microtremor","wordcount":  672 ,
+        "url": "https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/","datePublished": "2023-06-15T00:00:00+00:00","dateModified": "2023-06-15T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "AriesChen"},"author": {
+                "@type": "Person",
+                "name": "AriesChen"
+            },"description": ""
+    }
+    </script></head>
+
+  <body
+    header-desktop=""
+    header-mobile=""
+  ><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+    </div>
+    <div class="menu">
+      <div class="menu-inner"><a
+            class="menu-item"
+            href="/post/"
+            
+          > Article
+            </a><a
+            class="menu-item"
+            href="/tags/"
+            
+          > Tags
+            </a><a
+            class="menu-item"
+            href="/categories/"
+            
+          > Categories
+            </a><a
+            class="menu-item"
+            href="/about/"
+            
+              title="About"
+            
+          > About
+            </a><a
+            class="menu-item
+              active
+            "
+            href="/"
+            
+          > docs
+            </a><span class="menu-item delimiter"></span><a
+            href="javascript:void(0);"
+            class="menu-item theme-switch"
+            title="Switch Theme"
+          >
+            <i class="fas fa-adjust fa-fw"></i>
+          </a></div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><a
+          class="menu-item"
+          href="/post/"
+          title=""
+          
+        >Article</a><a
+          class="menu-item"
+          href="/tags/"
+          title=""
+          
+        >Tags</a><a
+          class="menu-item"
+          href="/categories/"
+          title=""
+          
+        >Categories</a><a
+          class="menu-item"
+          href="/about/"
+          title="About"
+          
+        >About</a><a
+          class="menu-item"
+          href="/"
+          title=""
+          
+        >docs</a><a
+          href="javascript:void(0);"
+          class="menu-item theme-switch"
+          title="Switch Theme"
+        >
+          <i class="fas fa-adjust fa-fw"></i>
+        </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+        <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Scene of Microtremor with NeRF</h1><div class="content" id="content"><p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*hDMkE8-tA4qDKhamoqqqpw.jpeg"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*hDMkE8-tA4qDKhamoqqqpw.jpeg,
+        https://miro.medium.com/v2/resize:fit:1400/1*hDMkE8-tA4qDKhamoqqqpw.jpeg 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*hDMkE8-tA4qDKhamoqqqpw.jpeg 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*hDMkE8-tA4qDKhamoqqqpw.jpeg"
+    
+    
+  /></figure></p>
+<p>Scene of Microtremor</p>
+<h1 id="microtremor" class="headerLink">
+    <a href="#microtremor" class="header-mark"></a>Microtremor</h1><p>The microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:830/1*gpfsBT4o15NgRd8PWXnLPw.png"
+    srcset="https://miro.medium.com/v2/resize:fit:830/1*gpfsBT4o15NgRd8PWXnLPw.png,
+        https://miro.medium.com/v2/resize:fit:830/1*gpfsBT4o15NgRd8PWXnLPw.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:830/1*gpfsBT4o15NgRd8PWXnLPw.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:830/1*gpfsBT4o15NgRd8PWXnLPw.png"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<p>To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors. These spectral characteristics can be used to infer the geotechnical properties of the subsurface, such as the shear wave velocity, which is an important parameter in the analysis of earthquake hazards and site response.</p>
+<p>The microtremor method is a relatively simple and non-invasive technique that can be used to study a wide range of geotechnical and geological problems. It is often used in conjunction with other geophysical techniques, such as surface wave analysis, to provide a more complete understanding of the subsurface.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:882/1*i8rU35MtsWxzd4YSRfxlzQ.png"
+    srcset="https://miro.medium.com/v2/resize:fit:882/1*i8rU35MtsWxzd4YSRfxlzQ.png,
+        https://miro.medium.com/v2/resize:fit:882/1*i8rU35MtsWxzd4YSRfxlzQ.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:882/1*i8rU35MtsWxzd4YSRfxlzQ.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:882/1*i8rU35MtsWxzd4YSRfxlzQ.png"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<h2 id="spac" class="headerLink">
+    <a href="#spac" class="header-mark"></a>SPAC</h2><p>Spatial autocorrelation (SPAC), introduced by Aki , is one of the more reliable and more promising of the ambient vibration array techniques currently available. The basic assumption of this technique is that surface waves resulting from ambient noise can be regarded as the sum of waves propagating in a horizontal plane in different directions with different powers, but with the same phase velocity for a given frequency. Therefore, the phase velocity of these waves can be computed by estimating the spatial-correlation function for a fixed frequency without knowledge of the directionality of the waves. By varying the frequency, the phase velocity can be determined as a function of frequency. To capture the surface waves from all directions, as originally proposed, the microtremor SPAC method for phase-velocity determination requires measurement of noise data using sensors placed in a circular array, with an additional one located in the center of the array. In many cases in urban areas, such a sensor layout is difficult to achieve. This constraint has hence led to a number of studies that have modified the original SPAC method.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1224/1*IkvLTyjzqLIHYCrB5qeUjA.jpeg"
+    srcset="https://miro.medium.com/v2/resize:fit:1224/1*IkvLTyjzqLIHYCrB5qeUjA.jpeg,
+        https://miro.medium.com/v2/resize:fit:1224/1*IkvLTyjzqLIHYCrB5qeUjA.jpeg 1.5x,
+        https://miro.medium.com/v2/resize:fit:1224/1*IkvLTyjzqLIHYCrB5qeUjA.jpeg 2x"
+    title="https://miro.medium.com/v2/resize:fit:1224/1*IkvLTyjzqLIHYCrB5qeUjA.jpeg"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<h2 id="hvsr" class="headerLink">
+    <a href="#hvsr" class="header-mark"></a>HVSR</h2><p>Nakamura, (1989) developed the well-known Horizontal to Vertical Spectral Ratio (HVSR or H/V), which proved to be an extremely cost-effective and rapid tool for seismological investigations, and particularly well suited to study extensive areas (e.g. Nakamura 1989; Nakamura 2019).</p>
+<p>Recent introduction of new low-cost and portable sensors and advancement in numerical modeling and inversion techniques, largely popularized the HVSR method and improved our capability of investigating large areas and gain a better understanding of their seismic behaviour. Since its introduction, HVSR has been applied in an increasing number of studies worldwide, to determine the fundamental vibration frequency of the sedimentary cover. For example, in the studies of the Grenoble basin (Cornou et al. 2008), Thessaloniki basin (Raptakis and Makra 2010), Trabzon-Arsin Basin (Akin and Sayil 2016), the horizontal to vertical spectral ratio, as computed in the HVSR method, was leveraged to explore the seismic response of the sites in frequency domain and assess the resonance frequency(ies) of the sediments. The application of HVSR from ambient noises has also been employed in geotechnical applications to obtain 1D (i.e. layered) shear wave velocity profiles (Raptakis and Makra 2010).</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1242/1*dhCcAS8R7UZ0s_4vl81NBQ.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1242/1*dhCcAS8R7UZ0s_4vl81NBQ.png,
+        https://miro.medium.com/v2/resize:fit:1242/1*dhCcAS8R7UZ0s_4vl81NBQ.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1242/1*dhCcAS8R7UZ0s_4vl81NBQ.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1242/1*dhCcAS8R7UZ0s_4vl81NBQ.png"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<h1 id="neural-radiance-fields-nerf" class="headerLink">
+    <a href="#neural-radiance-fields-nerf" class="header-mark"></a>Neural Radiance Fields (NeRF)</h1><p>A neural radiance field (NeRF) is a fully-connected neural network that can generate novel views of complex 3D scenes, based on a partial set of 2D images. It is trained to use a rendering loss to reproduce input views of a scene. It works by taking input images representing a scene and interpolating between them to render one complete scene. NeRF is a highly effective way to generate images for synthetic data.</p>
+<p>A NeRF network is trained to map directly from viewing direction and spatial location (5D input) to opacity and color (4D output), using volume rendering to render new views. NeRF is a computationally-intensive algorithm, and processing of complex scenes can take hours or days. However, new algorithms are available that dramatically improve performance.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:704/1*_986fTHFE-es7rb2ZJSW_A.png"
+    srcset="https://miro.medium.com/v2/resize:fit:704/1*_986fTHFE-es7rb2ZJSW_A.png,
+        https://miro.medium.com/v2/resize:fit:704/1*_986fTHFE-es7rb2ZJSW_A.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:704/1*_986fTHFE-es7rb2ZJSW_A.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:704/1*_986fTHFE-es7rb2ZJSW_A.png"
+    
+    
+  /></figure></p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*xdu4X53kiV5lnZxK09HodA.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*xdu4X53kiV5lnZxK09HodA.png,
+        https://miro.medium.com/v2/resize:fit:1400/1*xdu4X53kiV5lnZxK09HodA.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*xdu4X53kiV5lnZxK09HodA.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*xdu4X53kiV5lnZxK09HodA.png"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+</div></div></div>
+      </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line">
+          Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.124.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+        </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
+            >&nbsp;<a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ></a
+            ></span
+          ></div>
+      <div class="footer-line"></div>
+      <div class="footer-line"></div>
+    </div></footer></div>
+
+    <div id="fixed-buttons"><a
+        href="#back-to-top"
+        id="back-to-top-button"
+        class="fixed-button"
+        title="Back to Top"
+      >
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a
+        href="#"
+        id="view-comments"
+        class="fixed-button"
+        title="View Comments"
+      >
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script
+    type="text/javascript"
+    src="/lib/clipboard/clipboard.min.js"
+    
+  ></script><script
+    type="text/javascript"
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script></div>
+</body>
+</html>

@@ -1,16 +1,30 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>“AI” - Tag - AriesChen&#39;s Blog</title>
+        <title>AI - Tag - AriesChen&#39;s Blog</title>
         <link>https://AriesChen-UPC.github.io/tags/ai/</link>
-        <description>“AI” - Tag - AriesChen&#39;s Blog</description>
+        <description>AI - Tag - AriesChen&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/ai/" rel="self" type="application/rss+xml" /><item>
     <title>Aries Chen</title>
     <link>https://AriesChen-UPC.github.io/post/arieschen-preview/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>AriesChen</name>
     </author><guid>https://AriesChen-UPC.github.io/post/arieschen-preview/</guid>
-    <description><![CDATA[Hello! My name is Aries Chen, and I&rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics.
-My academic journey is deeply rooted in the exploration of the earth&rsquo;s physical properties, but I&rsquo;ve recently taken a keen interest in the realm of Artificial Intelligence.
-I&rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.]]></description>
+    <description><![CDATA[Hello! My name is Aries Chen, and I&rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics. My academic journey is deeply rooted in the exploration of the earth&rsquo;s physical properties, but I&rsquo;ve recently taken a keen interest in the realm of Artificial Intelligence. I&rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.]]></description>
+</item><item>
+    <title>Harnessing Vision Transformers for Geological Radar Image Classification</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</link>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</guid>
+    <description><![CDATA[Geological exploration has long been a domain of meticulous study and analysis, where the subsurface secrets of the Earth are decoded from images that are as complex as they are enigmatic. One of the most powerful tools in this quest has been Ground Penetrating Radar (GPR), a technology that peers into the depths of the geological layers without a single shovel strike. But the interpretation of GPR data has remained a highly specialized skill — until now.]]></description>
+</item><item>
+    <title>Scene of Microtremor with NeRF</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</link>
+    <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</guid>
+    <description><![CDATA[Scene of Microtremor
+MicrotremorThe microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.
+To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors.]]></description>
 </item></channel>
 </rss>
