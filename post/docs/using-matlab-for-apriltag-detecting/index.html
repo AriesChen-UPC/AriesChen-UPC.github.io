@@ -1,0 +1,393 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noodp" />
+    <title>Using MATLAB for AprilTag detecting - AriesChen&#39;s Blog</title><meta
+  name="Description"
+  content=""
+/><meta property="og:title" content="Using MATLAB for AprilTag detecting" />
+<meta property="og:description" content="AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.
+Image from University of Michigan
+AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Using MATLAB for AprilTag detecting"/>
+<meta name="twitter:description" content="AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.
+Image from University of Michigan
+AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag."/>
+<meta
+  name="application-name"
+  content="AriesChen&#39;s Blog"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="AriesChen&#39;s Blog"
+/>
+
+<meta name="theme-color" content="#f8f8f8" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/" /><link rel="prev" href="https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/" /><link rel="next" href="https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/" />
+<link
+      rel="stylesheet"
+      href="/css/main.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/lib/normalize/normalize.min.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/color.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/style.min.css"
+      
+    /><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/fontawesome-free/all.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/fontawesome-free/all.min.css"
+        
+    /></noscript><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/animate/animate.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/animate/animate.min.css"
+        
+    /></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Using MATLAB for AprilTag detecting",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/"
+        },"genre": "post","keywords": "MATLAB, AprilTag","wordcount":  580 ,
+        "url": "https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/","datePublished": "2022-07-01T00:00:00+00:00","dateModified": "2022-07-01T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "AriesChen"},"author": {
+                "@type": "Person",
+                "name": "AriesChen"
+            },"description": ""
+    }
+    </script></head>
+
+  <body
+    header-desktop=""
+    header-mobile=""
+  ><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+    </div>
+    <div class="menu">
+      <div class="menu-inner"><a
+            class="menu-item"
+            href="/post/"
+            
+          > Article
+            </a><a
+            class="menu-item"
+            href="/tags/"
+            
+          > Tags
+            </a><a
+            class="menu-item"
+            href="/categories/"
+            
+          > Categories
+            </a><a
+            class="menu-item"
+            href="/about/"
+            
+              title="About"
+            
+          > About
+            </a><a
+            class="menu-item
+              active
+            "
+            href="/"
+            
+          > docs
+            </a><span class="menu-item delimiter"></span><a
+            href="javascript:void(0);"
+            class="menu-item theme-switch"
+            title="Switch Theme"
+          >
+            <i class="fas fa-adjust fa-fw"></i>
+          </a></div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><a
+          class="menu-item"
+          href="/post/"
+          title=""
+          
+        >Article</a><a
+          class="menu-item"
+          href="/tags/"
+          title=""
+          
+        >Tags</a><a
+          class="menu-item"
+          href="/categories/"
+          title=""
+          
+        >Categories</a><a
+          class="menu-item"
+          href="/about/"
+          title="About"
+          
+        >About</a><a
+          class="menu-item"
+          href="/"
+          title=""
+          
+        >docs</a><a
+          href="javascript:void(0);"
+          class="menu-item theme-switch"
+          title="Switch Theme"
+        >
+          <i class="fas fa-adjust fa-fw"></i>
+        </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+        <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Using MATLAB for AprilTag detecting</h1><div class="content" id="content"><blockquote>
+<p>AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.</p>
+</blockquote>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*IX1otmM33h_mec4islurfA.jpeg"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*IX1otmM33h_mec4islurfA.jpeg,
+        https://miro.medium.com/v2/resize:fit:1400/1*IX1otmM33h_mec4islurfA.jpeg 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*IX1otmM33h_mec4islurfA.jpeg 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*IX1otmM33h_mec4islurfA.jpeg"
+    
+    
+  /></figure></p>
+<p>Image from University of Michigan</p>
+<p>AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag. Here we use MATLAB to do some research about AprilTag.</p>
+<h2 id="create-apriltag" class="headerLink">
+    <a href="#create-apriltag" class="header-mark"></a>Create AprilTag</h2><p>Here we use OpenMV to create AprilTags in the TAG36H11 family. We create six tag IDs from family 0 to family 5 for a test.</p>
+<p>Here is an example: TAG36H11 0</p>
+<blockquote>
+<p>The OpenMV project is about creating low-cost, extensible, Python-powered, machine vision modules and aims at becoming the “Arduino of Machine Vision**”**.</p>
+</blockquote>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*sGFg3EfYnlyqGhXJauwVVw.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*sGFg3EfYnlyqGhXJauwVVw.png,
+        https://miro.medium.com/v2/resize:fit:1400/1*sGFg3EfYnlyqGhXJauwVVw.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*sGFg3EfYnlyqGhXJauwVVw.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*sGFg3EfYnlyqGhXJauwVVw.png"
+    
+    
+  /></figure></p>
+<p>TAG36H11 created by OpenMV</p>
+<h2 id="place-the-apriltag" class="headerLink">
+    <a href="#place-the-apriltag" class="header-mark"></a>Place the AprilTag</h2><p>We use the AprilTag to label documents, and stapler e.g., the tags are placed irregularly with different angles. Our aim is to test the accuracy of the recognition.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*LZEAWk5F9MkosIxIkZcF5Q.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*LZEAWk5F9MkosIxIkZcF5Q.png,
+        https://miro.medium.com/v2/resize:fit:1400/1*LZEAWk5F9MkosIxIkZcF5Q.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*LZEAWk5F9MkosIxIkZcF5Q.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*LZEAWk5F9MkosIxIkZcF5Q.png"
+    
+    
+  /></figure></p>
+<p>Our office desk</p>
+<h2 id="detect-the-apriltag" class="headerLink">
+    <a href="#detect-the-apriltag" class="header-mark"></a>Detect the AprilTag</h2><p>First, we load the picture including AprilTags in it, and store it in the MATLAB workspace for later use.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="p">[</span><span class="n">file</span><span class="p">,</span><span class="n">path</span><span class="p">]</span> <span class="p">=</span> <span class="n">uigetfile</span><span class="p">({</span><span class="s">&#39;*.jpg;*.bmp;*.png&#39;</span><span class="p">,</span><span class="s">&#39;All Image Files&#39;</span><span class="p">;</span><span class="s">&#39;*.*&#39;</span><span class="p">,</span><span class="s">&#39;All Files&#39;</span><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">isequal</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">disp</span><span class="p">(</span><span class="s">&#39;User selected Cancel&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">disp</span><span class="p">([</span><span class="s">&#39;User selected &#39;</span><span class="p">,</span> <span class="n">fullfile</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">file</span><span class="p">)]);</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="n">imagePath</span> <span class="p">=</span> <span class="n">fullfile</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">file</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">I</span> <span class="p">=</span> <span class="n">imread</span><span class="p">(</span><span class="n">imagePath</span><span class="p">)</span>
+</span></span></code></pre></div><p>Then using the <strong>readAprilTag</strong> function to detect the AprilTags.</p>
+<p>The AprilTag formats are supported within “tag36h11”, “tagCircle21h7”, “tagCircle49h12”, “tagCustom48h12”, “tagStandard41h12”.</p>
+<blockquote>
+<p>readAprilTag: Detect and estimate pose for AprilTag in image</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="p">[</span><span class="n">id</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="n">detectedFamily</span><span class="p">]</span> <span class="p">=</span> <span class="n">readAprilTag</span><span class="p">(</span><span class="n">I</span><span class="p">,</span><span class="n">tagFamily</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">idx</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="nb">length</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">disp</span><span class="p">(</span>&#34;<span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> &#34; <span class="o">+</span> <span class="n">id</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span> <span class="o">+</span> &#34;<span class="p">,</span> &#34; <span class="o">+</span> <span class="n">detectedFamily</span><span class="p">(</span><span class="n">idx</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="n">markerRadius</span> <span class="p">=</span> <span class="mi">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">numCorners</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">markerPosition</span> <span class="p">=</span> <span class="p">[</span><span class="n">loc</span><span class="p">(:,:,</span><span class="n">idx</span><span class="p">),</span><span class="nb">repmat</span><span class="p">(</span><span class="n">markerRadius</span><span class="p">,</span><span class="n">numCorners</span><span class="p">,</span><span class="mi">1</span><span class="p">)];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">I</span> <span class="p">=</span> <span class="n">insertShape</span><span class="p">(</span><span class="n">I</span><span class="p">,</span>&#34;<span class="n">FilledCircle</span>&#34;<span class="p">,</span><span class="n">markerPosition</span><span class="p">,</span><span class="n">Color</span><span class="p">=</span>&#34;<span class="n">red</span>&#34;<span class="p">,</span><span class="n">Opacity</span><span class="p">=</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span></code></pre></div><p>Here we can see, some incorrect corners are detected which are labeled with red circles. Some are detected as tagCircle21h7 family.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tag36h11</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">tag36h11</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">tag36h11</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="n">tagCircle21h7</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="n">tag36h11</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="n">tag36h11</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="n">tag36h11</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="n">tagCircle21h7</span>
+</span></span><span class="line"><span class="cl"><span class="n">Detected</span> <span class="n">Tag</span> <span class="n">ID</span><span class="p">,</span> <span class="n">Family</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span> <span class="n">tagCircle21h7</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*IvQORGkpDPYCiJ5wbUEVTg.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*IvQORGkpDPYCiJ5wbUEVTg.png,
+        https://miro.medium.com/v2/resize:fit:1400/1*IvQORGkpDPYCiJ5wbUEVTg.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*IvQORGkpDPYCiJ5wbUEVTg.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*IvQORGkpDPYCiJ5wbUEVTg.png"
+    
+    
+  /></figure></p>
+<p>RGB image detection</p>
+<p>So, we change the RGB picture to binary and do the detection again. The result of the detection is correct. Only the AprilTag we placed was detected, which was labeled by the four corners.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="p">[</span><span class="n">I</span><span class="p">,</span> <span class="n">imageTransformName</span><span class="p">]=</span> <span class="n">image2binary</span><span class="p">(</span><span class="n">imagePath</span><span class="p">);</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*jQCRCa8bC5k6mYDoQzJ1ZA.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*jQCRCa8bC5k6mYDoQzJ1ZA.png,
+        https://miro.medium.com/v2/resize:fit:1400/1*jQCRCa8bC5k6mYDoQzJ1ZA.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*jQCRCa8bC5k6mYDoQzJ1ZA.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*jQCRCa8bC5k6mYDoQzJ1ZA.png"
+    
+    
+  /></figure></p>
+<p>Binary image detection</p>
+<h1 id="estimate-apriltag-poses-in-image" class="headerLink">
+    <a href="#estimate-apriltag-poses-in-image" class="header-mark"></a>Estimate AprilTag Poses in Image</h1><p>We use the camera’s intrinsic parameters to estimate AprilTag poses.</p>
+<p>First, we load the information from the camera.</p>
+<p>Second, specify the tag size in meters and undistort the input image using the camera’s intrinsic parameters.</p>
+<p>Third, detect a specific family of AprilTags and estimate the tag poses, and set the origin for the axes vectors and for the tag frames.</p>
+<p>Finally, we can add the tag frames and IDs to the image.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">info</span> <span class="p">=</span> <span class="n">imfinfo</span><span class="p">(</span><span class="n">imagePath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">focalLength</span> <span class="p">=</span> <span class="n">info</span><span class="p">.</span><span class="n">DigitalCamera</span><span class="p">.</span><span class="n">FocalLength</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">widthPixel</span> <span class="p">=</span> <span class="n">info</span><span class="p">.</span><span class="n">Width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">lengthPixel</span> <span class="p">=</span> <span class="n">info</span><span class="p">.</span><span class="n">Height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">focalLength</span> <span class="p">=</span> <span class="p">[</span><span class="n">focalLength</span> <span class="o">*</span> <span class="n">lengthPixel</span><span class="p">,</span><span class="n">focalLength</span> <span class="o">*</span> <span class="n">widthPixel</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">principalPoint</span> <span class="p">=</span> <span class="p">[</span><span class="n">lengthPixel</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">widthPixel</span><span class="o">/</span><span class="mi">2</span><span class="p">];</span>  <span class="c">% principalPoint</span>
+</span></span><span class="line"><span class="cl"><span class="n">imageSize</span> <span class="p">=</span> <span class="p">[</span><span class="n">lengthPixel</span><span class="p">,</span> <span class="n">widthPixel</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">intrinsics</span> <span class="p">=</span> <span class="n">cameraIntrinsics</span><span class="p">(</span><span class="n">focalLength</span><span class="p">,</span><span class="n">principalPoint</span><span class="p">,</span><span class="n">imageSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">tagSize</span> <span class="p">=</span> <span class="mf">0.04</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">I</span> <span class="p">=</span> <span class="n">undistortImage</span><span class="p">(</span><span class="n">I</span><span class="p">,</span><span class="n">intrinsics</span><span class="p">,</span>&#34;<span class="n">OutputView</span>&#34;<span class="p">,</span>&#34;<span class="n">same</span>&#34;<span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">id</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="n">pose</span><span class="p">]</span> <span class="p">=</span> <span class="n">readAprilTag</span><span class="p">(</span><span class="n">I</span><span class="p">,</span>&#34;<span class="n">tag36h11</span>&#34;<span class="p">,</span><span class="n">intrinsics</span><span class="p">,</span><span class="n">tagSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">worldPoints</span> <span class="p">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span> <span class="n">tagSize</span><span class="o">/</span><span class="mi">2</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span> <span class="mi">0</span> <span class="n">tagSize</span><span class="o">/</span><span class="mi">2</span> <span class="mi">0</span><span class="p">;</span> <span class="mi">0</span> <span class="mi">0</span> <span class="n">tagSize</span><span class="o">/</span><span class="mi">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="nb">length</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">imagePoints</span> <span class="p">=</span> <span class="n">worldToImage</span><span class="p">(</span><span class="n">intrinsics</span><span class="p">,</span><span class="n">pose</span><span class="p">(</span><span class="nb">i</span><span class="p">).</span><span class="n">Rotation</span><span class="p">,</span> <span class="c">...</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">pose</span><span class="p">(</span><span class="nb">i</span><span class="p">).</span><span class="n">Translation</span><span class="p">,</span><span class="n">worldPoints</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">I</span> <span class="p">=</span> <span class="n">insertShape</span><span class="p">(</span><span class="n">I</span><span class="p">,</span>&#34;<span class="n">Line</span>&#34;<span class="p">,[</span><span class="n">imagePoints</span><span class="p">(</span><span class="mi">1</span><span class="p">,:)</span> <span class="n">imagePoints</span><span class="p">(</span><span class="mi">2</span><span class="p">,:);</span> <span class="c">...</span>
+</span></span><span class="line"><span class="cl">        <span class="n">imagePoints</span><span class="p">(</span><span class="mi">1</span><span class="p">,:)</span> <span class="n">imagePoints</span><span class="p">(</span><span class="mi">3</span><span class="p">,:);</span> <span class="n">imagePoints</span><span class="p">(</span><span class="mi">1</span><span class="p">,:)</span> <span class="n">imagePoints</span><span class="p">(</span><span class="mi">4</span><span class="p">,:)],</span> <span class="c">...</span>
+</span></span><span class="line"><span class="cl">        &#34;<span class="n">Color</span>&#34;<span class="p">,[</span>&#34;<span class="n">red</span>&#34;<span class="p">,</span>&#34;<span class="n">green</span>&#34;<span class="p">,</span>&#34;<span class="n">blue</span>&#34;<span class="p">],</span>&#34;<span class="n">LineWidth</span>&#34;<span class="p">,</span><span class="mi">7</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">I</span> <span class="p">=</span> <span class="n">insertText</span><span class="p">(</span><span class="n">I</span><span class="p">,</span><span class="n">loc</span><span class="p">(</span><span class="mi">1</span><span class="p">,:,</span><span class="nb">i</span><span class="p">),</span><span class="n">id</span><span class="p">(</span><span class="nb">i</span><span class="p">),</span>&#34;<span class="n">BoxOpacity</span>&#34;<span class="p">,</span><span class="mi">1</span><span class="p">,</span>&#34;<span class="n">FontSize</span>&#34;<span class="p">,</span><span class="mi">60</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*CbhR6LZF3xGI2JRjnKrU-A.png"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*CbhR6LZF3xGI2JRjnKrU-A.png,
+        https://miro.medium.com/v2/resize:fit:1400/1*CbhR6LZF3xGI2JRjnKrU-A.png 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*CbhR6LZF3xGI2JRjnKrU-A.png 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*CbhR6LZF3xGI2JRjnKrU-A.png"
+    
+    
+  /></figure></p>
+<p>AprilTag detection</p>
+<p>AprilTags are widely used as visual markers for applications in object detection, and localization, and as a target for camera calibration.</p>
+<p>So, take a try!</p>
+</div></div></div>
+      </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line">
+          Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.124.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+        </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
+            >&nbsp;<a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ></a
+            ></span
+          ></div>
+      <div class="footer-line"></div>
+      <div class="footer-line"></div>
+    </div></footer></div>
+
+    <div id="fixed-buttons"><a
+        href="#back-to-top"
+        id="back-to-top-button"
+        class="fixed-button"
+        title="Back to Top"
+      >
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a
+        href="#"
+        id="view-comments"
+        class="fixed-button"
+        title="View Comments"
+      >
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script
+    type="text/javascript"
+    src="/lib/clipboard/clipboard.min.js"
+    
+  ></script><script
+    type="text/javascript"
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script></div>
+</body>
+</html>

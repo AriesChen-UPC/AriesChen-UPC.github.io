@@ -1,0 +1,362 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noodp" />
+    <title>Extract Lidar and Camera Data from Rosbag File with MATLAB - AriesChen&#39;s Blog</title><meta
+  name="Description"
+  content=""
+/><meta property="og:title" content="Extract Lidar and Camera Data from Rosbag File with MATLAB" />
+<meta property="og:description" content="ROS (Robot Operating System) provides libraries and tools to help software developers create robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more. ROS is licensed under an open source, BSD license.
+Requirement:
+Lidar Toolbox ROS Toolbox Optional:
+Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Extract Lidar and Camera Data from Rosbag File with MATLAB"/>
+<meta name="twitter:description" content="ROS (Robot Operating System) provides libraries and tools to help software developers create robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more. ROS is licensed under an open source, BSD license.
+Requirement:
+Lidar Toolbox ROS Toolbox Optional:
+Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;."/>
+<meta
+  name="application-name"
+  content="AriesChen&#39;s Blog"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="AriesChen&#39;s Blog"
+/>
+
+<meta name="theme-color" content="#f8f8f8" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/" /><link rel="prev" href="https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/" /><link rel="next" href="https://AriesChen-UPC.github.io/post/arieschen-preview/" />
+<link
+      rel="stylesheet"
+      href="/css/main.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/lib/normalize/normalize.min.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/color.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/style.min.css"
+      
+    /><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/fontawesome-free/all.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/fontawesome-free/all.min.css"
+        
+    /></noscript><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/animate/animate.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/animate/animate.min.css"
+        
+    /></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Extract Lidar and Camera Data from Rosbag File with MATLAB",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/"
+        },"genre": "post","keywords": "MATLAB, Lidar, Camera, Rosbag","wordcount":  434 ,
+        "url": "https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/","datePublished": "2022-10-01T00:00:00+00:00","dateModified": "2022-10-01T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "AriesChen"},"author": {
+                "@type": "Person",
+                "name": "AriesChen"
+            },"description": ""
+    }
+    </script></head>
+
+  <body
+    header-desktop=""
+    header-mobile=""
+  ><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+    </div>
+    <div class="menu">
+      <div class="menu-inner"><a
+            class="menu-item"
+            href="/post/"
+            
+          > Article
+            </a><a
+            class="menu-item"
+            href="/tags/"
+            
+          > Tags
+            </a><a
+            class="menu-item"
+            href="/categories/"
+            
+          > Categories
+            </a><a
+            class="menu-item"
+            href="/about/"
+            
+              title="About"
+            
+          > About
+            </a><a
+            class="menu-item
+              active
+            "
+            href="/"
+            
+          > docs
+            </a><span class="menu-item delimiter"></span><a
+            href="javascript:void(0);"
+            class="menu-item theme-switch"
+            title="Switch Theme"
+          >
+            <i class="fas fa-adjust fa-fw"></i>
+          </a></div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><a
+          class="menu-item"
+          href="/post/"
+          title=""
+          
+        >Article</a><a
+          class="menu-item"
+          href="/tags/"
+          title=""
+          
+        >Tags</a><a
+          class="menu-item"
+          href="/categories/"
+          title=""
+          
+        >Categories</a><a
+          class="menu-item"
+          href="/about/"
+          title="About"
+          
+        >About</a><a
+          class="menu-item"
+          href="/"
+          title=""
+          
+        >docs</a><a
+          href="javascript:void(0);"
+          class="menu-item theme-switch"
+          title="Switch Theme"
+        >
+          <i class="fas fa-adjust fa-fw"></i>
+        </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+        <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Extract Lidar and Camera Data from Rosbag File with MATLAB</h1><div class="content" id="content"><blockquote>
+<p>ROS (Robot Operating System) provides libraries and tools to help software developers create robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more. ROS is licensed under an open source, BSD license.</p>
+</blockquote>
+<p><strong>Requirement:</strong></p>
+<ol>
+<li>Lidar Toolbox</li>
+<li>ROS Toolbox</li>
+</ol>
+<p><strong>Optional:</strong></p>
+<ol>
+<li>Example data: The data is collected from ssl_slam, which relates to the article <em>&lt;</em><a
+  href="https://github.com/wh200720041/ssl_slam"
+  
+     target="_blank"
+  
+  rel="noopener noreferrer"
+  
+><em>Lightweight 3-D Localization and Mapping for Solid-State LiDAR</em></a>
+ <em>(Intel Realsense L515 as an example)&gt;</em>.</li>
+</ol>
+<h2 id="load-a-rosbag" class="headerLink">
+    <a href="#load-a-rosbag" class="header-mark"></a>Load a rosbag</h2><p>First, we load the rosbag file using the function <strong>rosbag</strong>. The file was load as a <strong>BagSelection</strong> in MATLAB. The BagSelection object is an index of the messages within a rosbag. You can use it to extract message data from a rosbag, select messages based on specific criteria, or create a timeseries of the message properties.</p>
+<blockquote>
+<p><a
+  href="https://www.mathworks.com/help/ros/ug/ros-log-files-rosbags.html"
+  
+     target="_blank"
+  
+  rel="noopener noreferrer"
+  
+><strong>MATLAB rosbag Structure</strong></a>
+<br>
+The BagSelection object has the following properties related to the rosbag:<br>
+<strong>• FilePath:</strong> a character vector of the absolute path to the rosbag file.<br>
+<strong>• StartTime:</strong> a scalar indicating the time the first message was recorded<br>
+<strong>• EndTime:</strong> a scalar indicating the time the last message was recorded<br>
+<strong>• NumMessages:</strong> a scalar indicating how many messages are contained in the file<br>
+<strong>• AvailableTopics:</strong> a list of what topic and message types were recorded in the bag. This is stored as table data that lists the number of messages, message type, and message definition for each topic. For more information on table data types, see Access Data in Tables. Here is an example output of this table.<br>
+<strong>• MessageList:</strong> a list of every message in the bag with rows sorted by time stamp of when the message was recorded. This list can be indexed and you can select a portion of the list this way. Calling select allows you to select subsets based on time stamp, topic or message type.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="p">[</span><span class="n">file</span><span class="p">,</span><span class="n">path</span><span class="p">]</span> <span class="p">=</span> <span class="n">uigetfile</span><span class="p">(</span><span class="s">&#39;*.bag&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">isequal</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">disp</span><span class="p">(</span><span class="s">&#39;User selected Cancel&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">disp</span><span class="p">([</span><span class="s">&#39;User selected &#39;</span><span class="p">,</span> <span class="n">fullfile</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">file</span><span class="p">)]);</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="n">fileName</span> <span class="p">=</span> <span class="n">fullfile</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">file</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">bag</span> <span class="p">=</span> <span class="n">rosbag</span><span class="p">(</span><span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">bag</span><span class="p">.</span><span class="n">AvailableTopics</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:1400/1*8fVwI-AJtCj7ySAMv5L8TA.jpeg"
+    srcset="https://miro.medium.com/v2/resize:fit:1400/1*8fVwI-AJtCj7ySAMv5L8TA.jpeg,
+        https://miro.medium.com/v2/resize:fit:1400/1*8fVwI-AJtCj7ySAMv5L8TA.jpeg 1.5x,
+        https://miro.medium.com/v2/resize:fit:1400/1*8fVwI-AJtCj7ySAMv5L8TA.jpeg 2x"
+    title="https://miro.medium.com/v2/resize:fit:1400/1*8fVwI-AJtCj7ySAMv5L8TA.jpeg"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<h2 id="select-the-subsets" class="headerLink">
+    <a href="#select-the-subsets" class="header-mark"></a>Select the subsets</h2><p>Second, we call the <strong>select</strong> function to select <em>“/camera/color/camera_info”, “/camera/color/image_raw”, “/camera/depth/camera_info”, and “/camera/depth/color/points”</em>. The <strong>image_raw</strong> and <strong>points</strong> subsets are the data we process later.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">bag</span><span class="p">.</span><span class="n">MessageList</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://miro.medium.com/v2/resize:fit:944/1*gJwwgtNBp2HJSd1yfPISzw.jpeg"
+    srcset="https://miro.medium.com/v2/resize:fit:944/1*gJwwgtNBp2HJSd1yfPISzw.jpeg,
+        https://miro.medium.com/v2/resize:fit:944/1*gJwwgtNBp2HJSd1yfPISzw.jpeg 1.5x,
+        https://miro.medium.com/v2/resize:fit:944/1*gJwwgtNBp2HJSd1yfPISzw.jpeg 2x"
+    title="https://miro.medium.com/v2/resize:fit:944/1*gJwwgtNBp2HJSd1yfPISzw.jpeg"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">bagColorCamera</span> <span class="p">=</span> <span class="n">select</span><span class="p">(</span><span class="n">bag</span><span class="p">,</span>&#34;<span class="n">Topic</span>&#34;<span class="p">,</span>&#34;<span class="o">/</span><span class="n">camera</span><span class="o">/</span><span class="n">color</span><span class="o">/</span><span class="n">camera_info</span>&#34;<span class="p">);</span> 
+</span></span><span class="line"><span class="cl"><span class="n">bagImage</span> <span class="p">=</span> <span class="n">select</span><span class="p">(</span><span class="n">bag</span><span class="p">,</span>&#34;<span class="n">Topic</span>&#34;<span class="p">,</span>&#34;<span class="o">/</span><span class="n">camera</span><span class="o">/</span><span class="n">color</span><span class="o">/</span><span class="n">image_raw</span>&#34;<span class="p">);</span> 
+</span></span><span class="line"><span class="cl"><span class="n">bagDepthCamera</span> <span class="p">=</span> <span class="n">select</span><span class="p">(</span><span class="n">bag</span><span class="p">,</span>&#34;<span class="n">Topic</span>&#34;<span class="p">,</span>&#34;<span class="o">/</span><span class="n">camera</span><span class="o">/</span><span class="n">depth</span><span class="o">/</span><span class="n">camera_info</span>&#34;<span class="p">);</span>  
+</span></span><span class="line"><span class="cl"><span class="n">bagPoints</span> <span class="p">=</span> <span class="n">select</span><span class="p">(</span><span class="n">bag</span><span class="p">,</span>&#34;<span class="n">Topic</span>&#34;<span class="p">,</span>&#34;<span class="o">/</span><span class="n">camera</span><span class="o">/</span><span class="n">depth</span><span class="o">/</span><span class="n">color</span><span class="o">/</span><span class="n">points</span>&#34;<span class="p">);</span>
+</span></span></code></pre></div><h2 id="extract-the-lidar-and-camera-data" class="headerLink">
+    <a href="#extract-the-lidar-and-camera-data" class="header-mark"></a>Extract the Lidar and Camera Data</h2><p>Third, we use the <strong>readMessages</strong> function to read all the messages in “/camera/color/image_raw”. The <strong>readImage</strong> function converts the data into an appropriate MATLAB image and returns it in img.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">imageMsgs</span> <span class="p">=</span> <span class="n">readMessages</span><span class="p">(</span><span class="n">bagImage</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">imageData</span> <span class="p">=</span> <span class="n">readImage</span><span class="p">(</span><span class="n">imageMsgs</span><span class="p">{</span><span class="mi">1</span><span class="p">});</span>  <span class="c">% the first frame</span>
+</span></span><span class="line"><span class="cl"><span class="n">imshow</span><span class="p">(</span><span class="n">imageData</span><span class="p">)</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.21@2x.png?raw=true"
+    srcset="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.21@2x.png?raw=true,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.21@2x.png?raw=true 1.5x,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.21@2x.png?raw=true 2x"
+    title="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.21@2x.png?raw=true"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+<p>The <strong>pointCloud</strong> function creates point cloud data from a set of points in 3-D coordinate system.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">pcMsgs</span> <span class="p">=</span> <span class="n">readMessages</span><span class="p">(</span><span class="n">bagPoints</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">pcData</span> <span class="p">=</span> <span class="n">pointCloud</span><span class="p">(</span><span class="n">readXYZ</span><span class="p">(</span><span class="n">pcMsgs</span><span class="p">{</span><span class="mi">1</span><span class="p">}));</span>  <span class="c">% the first frame</span>
+</span></span><span class="line"><span class="cl"><span class="n">pcshow</span><span class="p">(</span><span class="n">pcData</span><span class="p">,</span>&#34;<span class="n">BackgroundColor</span>&#34;<span class="p">,</span><span class="s">&#39;w&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">view</span><span class="p">([</span><span class="mf">15.00</span> <span class="mf">50.00</span><span class="p">])</span>
+</span></span></code></pre></div><p><figure><img
+    
+    loading="lazy"
+    src="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.33@2x.png?raw=true"
+    srcset="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.33@2x.png?raw=true,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.33@2x.png?raw=true 1.5x,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.33@2x.png?raw=true 2x"
+    title="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-03-27%20at%2009.11.33@2x.png?raw=true"
+    
+    
+  /></figure></p>
+<!-- raw HTML omitted -->
+</div></div></div>
+      </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line">
+          Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.124.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+        </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
+            >&nbsp;<a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ></a
+            ></span
+          ></div>
+      <div class="footer-line"></div>
+      <div class="footer-line"></div>
+    </div></footer></div>
+
+    <div id="fixed-buttons"><a
+        href="#back-to-top"
+        id="back-to-top-button"
+        class="fixed-button"
+        title="Back to Top"
+      >
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a
+        href="#"
+        id="view-comments"
+        class="fixed-button"
+        title="View Comments"
+      >
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script
+    type="text/javascript"
+    src="/lib/clipboard/clipboard.min.js"
+    
+  ></script><script
+    type="text/javascript"
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script></div>
+</body>
+</html>

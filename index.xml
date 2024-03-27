@@ -15,12 +15,39 @@
 My academic journey is deeply rooted in the exploration of the earth&rsquo;s physical properties, but I&rsquo;ve recently taken a keen interest in the realm of Artificial Intelligence.
 I&rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.]]></description>
 </item><item>
+    <title>Extract Lidar and Camera Data from Rosbag File with MATLAB</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</link>
+    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</guid>
+    <description><![CDATA[ROS (Robot Operating System) provides libraries and tools to help software developers create robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more. ROS is licensed under an open source, BSD license.
+Requirement:
+Lidar Toolbox ROS Toolbox Optional:
+Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;.]]></description>
+</item><item>
     <title>Dictionary Data Type in MATLAB</title>
     <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>
-    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
     </author><guid>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</guid>
     <description><![CDATA[A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.
 Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.]]></description>
+</item><item>
+    <title>Using MATLAB for AprilTag detecting</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</link>
+    <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</guid>
+    <description><![CDATA[AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.
+Image from University of Michigan
+AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag.]]></description>
+</item><item>
+    <title>Mapping toolbox in MATLAB for easily plotting and analysis</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</link>
+    <pubDate>Wed, 01 Jun 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</guid>
+    <description><![CDATA[Mapping Toolbox™ provides algorithms and functions for transforming geographic data and creating map displays. You can visualize your data in a geographic context, build map displays from more than 60 map projections, and transform data from a variety of sources into a consistent geographic coordinate system.
+As we all know, MATLAB provides a lot of toolboxes like Statistics and Machine Learning Toolbox, Signal Processing Toolbox™, Mapping Toolbox™ e.g. These toolboxes have many algorithms and functions for ease of our daily work and study.]]></description>
 </item></channel>
 </rss>

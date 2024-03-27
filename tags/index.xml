@@ -39,32 +39,39 @@
     </author><guid>https://AriesChen-UPC.github.io/tags/preview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Contribute</title>
-    <link>https://AriesChen-UPC.github.io/tags/contribute/</link>
-    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Camera</title>
+    <link>https://AriesChen-UPC.github.io/tags/camera/</link>
+    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/contribute/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/camera/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Lidar</title>
+    <link>https://AriesChen-UPC.github.io/tags/lidar/</link>
+    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/lidar/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MATLAB</title>
     <link>https://AriesChen-UPC.github.io/tags/matlab/</link>
-    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>https://AriesChen-UPC.github.io/tags/matlab/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Program</title>
-    <link>https://AriesChen-UPC.github.io/tags/program/</link>
-    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Rosbag</title>
+    <link>https://AriesChen-UPC.github.io/tags/rosbag/</link>
+    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/program/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/rosbag/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Python</title>
-    <link>https://AriesChen-UPC.github.io/tags/python/</link>
-    <pubDate>Sat, 15 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+    <title>Contribute</title>
+    <link>https://AriesChen-UPC.github.io/tags/contribute/</link>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/python/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/tags/contribute/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
