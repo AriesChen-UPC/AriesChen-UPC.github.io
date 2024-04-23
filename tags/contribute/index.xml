@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Contribute - Tag - AriesChen&#39;s Blog</title>
-        <link>https://AriesChen-UPC.github.io/tags/contribute/</link>
+        <link>http://localhost:1313/tags/contribute/</link>
         <description>Contribute - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/contribute/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/contribute/" rel="self" type="application/rss+xml" /><item>
     <title>Dictionary Data Type in MATLAB</title>
-    <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>
+    <link>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</guid>
+    </author><guid>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</guid>
     <description><![CDATA[A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.
 Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.]]></description>
 </item></channel>

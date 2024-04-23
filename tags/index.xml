@@ -1,77 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - AriesChen&#39;s Blog</title>
-        <link>https://AriesChen-UPC.github.io/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>AI</title>
-    <link>https://AriesChen-UPC.github.io/tags/ai/</link>
+    <link>http://localhost:1313/tags/ai/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/ai/</guid>
+    </author><guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Geophysics</title>
-    <link>https://AriesChen-UPC.github.io/tags/geophysics/</link>
+    <link>http://localhost:1313/tags/geophysics/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/geophysics/</guid>
+    </author><guid>http://localhost:1313/tags/geophysics/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Info</title>
-    <link>https://AriesChen-UPC.github.io/tags/info/</link>
+    <link>http://localhost:1313/tags/info/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/info/</guid>
+    </author><guid>http://localhost:1313/tags/info/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Marathon</title>
-    <link>https://AriesChen-UPC.github.io/tags/marathon/</link>
+    <link>http://localhost:1313/tags/marathon/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/marathon/</guid>
+    </author><guid>http://localhost:1313/tags/marathon/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Preview</title>
-    <link>https://AriesChen-UPC.github.io/tags/preview/</link>
+    <link>http://localhost:1313/tags/preview/</link>
     <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/preview/</guid>
+    </author><guid>http://localhost:1313/tags/preview/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Computer Vision</title>
-    <link>https://AriesChen-UPC.github.io/tags/computer-vision/</link>
+    <link>http://localhost:1313/tags/computer-vision/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/computer-vision/</guid>
+    </author><guid>http://localhost:1313/tags/computer-vision/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Python</title>
-    <link>https://AriesChen-UPC.github.io/tags/python/</link>
+    <link>http://localhost:1313/tags/python/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/python/</guid>
+    </author><guid>http://localhost:1313/tags/python/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Transformers</title>
-    <link>https://AriesChen-UPC.github.io/tags/transformers/</link>
+    <link>http://localhost:1313/tags/transformers/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/transformers/</guid>
+    </author><guid>http://localhost:1313/tags/transformers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Microtremor</title>
-    <link>https://AriesChen-UPC.github.io/tags/microtremor/</link>
+    <link>http://localhost:1313/tags/microtremor/</link>
     <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/microtremor/</guid>
+    </author><guid>http://localhost:1313/tags/microtremor/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>NeRF</title>
-    <link>https://AriesChen-UPC.github.io/tags/nerf/</link>
+    <link>http://localhost:1313/tags/nerf/</link>
     <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/nerf/</guid>
+    </author><guid>http://localhost:1313/tags/nerf/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
