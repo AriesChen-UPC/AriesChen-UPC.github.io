@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Microtremor - Tag - AriesChen&#39;s Blog</title>
-        <link>http://localhost:1313/tags/microtremor/</link>
+        <link>https://AriesChen-UPC.github.io/tags/microtremor/</link>
         <description>Microtremor - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/microtremor/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/microtremor/" rel="self" type="application/rss+xml" /><item>
     <title>Scene of Microtremor with NeRF</title>
-    <link>http://localhost:1313/post/docs/scene-of-microtremor-with-nerf/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</link>
     <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/scene-of-microtremor-with-nerf/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</guid>
     <description><![CDATA[Scene of Microtremor
 MicrotremorThe microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.
 To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors.]]></description>

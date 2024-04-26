@@ -1,65 +1,73 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Development - Category - AriesChen&#39;s Blog</title>
-        <link>http://localhost:1313/categories/development/</link>
+        <link>https://AriesChen-UPC.github.io/categories/development/</link>
         <description>Development - Category - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/development/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/categories/development/" rel="self" type="application/rss+xml" /><item>
+    <title>Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</link>
+    <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</guid>
+    <description><![CDATA[The advent of artificial intelligence (AI) in weather forecasting marks a pivotal shift in meteorological sciences, combining traditional numerical weather prediction (NWP) methods with advanced machine learning techniques. Pangu-Weather, a large AI model, enhances medium-range global weather forecasting through its innovative 3D neural network architecture, highlighting significant improvements over existing methods in accuracy and computational efficiency.
+1. IntroductionHistorically, weather forecasting has relied on NWP, which, despite its precision, suffers from high computational demands.]]></description>
+</item><item>
     <title>Harnessing Vision Transformers for Geological Radar Image Classification</title>
-    <link>http://localhost:1313/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</guid>
     <description><![CDATA[Geological exploration has long been a domain of meticulous study and analysis, where the subsurface secrets of the Earth are decoded from images that are as complex as they are enigmatic. One of the most powerful tools in this quest has been Ground Penetrating Radar (GPR), a technology that peers into the depths of the geological layers without a single shovel strike. But the interpretation of GPR data has remained a highly specialized skill — until now.]]></description>
 </item><item>
     <title>Scene of Microtremor with NeRF</title>
-    <link>http://localhost:1313/post/docs/scene-of-microtremor-with-nerf/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</link>
     <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/scene-of-microtremor-with-nerf/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/scene-of-microtremor-with-nerf/</guid>
     <description><![CDATA[Scene of Microtremor
 MicrotremorThe microtremor method is a geophysical technique used to measure the natural vibrations of the ground, known as microtremors. These vibrations are typically caused by the movement of the earth’s crust, such as earthquakes, and can be used to study the subsurface structure and properties of the earth.
 To measure microtremors, a seismograph or accelerometer is typically placed on the ground at a specific location. The device records the ground motion as a function of time and frequency, and this data can be used to calculate the spectral characteristics of the microtremors.]]></description>
 </item><item>
     <title>Extract Lidar and Camera Data from Rosbag File with MATLAB</title>
-    <link>http://localhost:1313/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</link>
     <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</guid>
     <description><![CDATA[ROS (Robot Operating System) provides libraries and tools to help software developers create robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more. ROS is licensed under an open source, BSD license.
 Requirement:
 Lidar Toolbox ROS Toolbox Optional:
 Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;.]]></description>
 </item><item>
     <title>Add Interactive Tasks to a Live Script in MATLAB</title>
-    <link>http://localhost:1313/post/docs/add-interactive-tasks-to-a-live-script/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/add-interactive-tasks-to-a-live-script/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</guid>
     <description><![CDATA[Live Editor tasks are simple point-and-click interfaces that can be added to a live script to perform a specific set of operations. You can add tasks to live scripts to explore parameters and automatically generate code. Use tasks to reduce development time, errors, and time spent plotting.
 We are familiar with Jupyter notebook in Python. In MATLAB, there are live scripts. MATLAB live scripts and live functions are interactive documents that combine MATLAB code with formatted text, equations, and images in a single environment called the Live Editor.]]></description>
 </item><item>
     <title>Dictionary Data Type in MATLAB</title>
-    <link>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</guid>
     <description><![CDATA[A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.
 Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.]]></description>
 </item><item>
     <title>Using MATLAB for AprilTag detecting</title>
-    <link>http://localhost:1313/post/docs/using-matlab-for-apriltag-detecting/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</link>
     <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/using-matlab-for-apriltag-detecting/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</guid>
     <description><![CDATA[AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.
 Image from University of Michigan
 AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag.]]></description>
 </item><item>
     <title>Mapping toolbox in MATLAB for easily plotting and analysis</title>
-    <link>http://localhost:1313/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</link>
     <pubDate>Wed, 01 Jun 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</guid>
     <description><![CDATA[Mapping Toolbox™ provides algorithms and functions for transforming geographic data and creating map displays. You can visualize your data in a geographic context, build map displays from more than 60 map projections, and transform data from a variety of sources into a consistent geographic coordinate system.
 As we all know, MATLAB provides a lot of toolboxes like Statistics and Machine Learning Toolbox, Signal Processing Toolbox™, Mapping Toolbox™ e.g. These toolboxes have many algorithms and functions for ease of our daily work and study.]]></description>
 </item></channel>

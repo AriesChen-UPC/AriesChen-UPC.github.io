@@ -1,0 +1,338 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noodp" />
+    <title>Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting - AriesChen&#39;s Blog</title><meta
+  name="Description"
+  content="This is AriesChen&#39;s personal website"
+/><meta property="og:title" content="Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting" />
+<meta property="og:description" content="The advent of artificial intelligence (AI) in weather forecasting marks a pivotal shift in meteorological sciences, combining traditional numerical weather prediction (NWP) methods with advanced machine learning techniques. Pangu-Weather, a large AI model, enhances medium-range global weather forecasting through its innovative 3D neural network architecture, highlighting significant improvements over existing methods in accuracy and computational efficiency.
+1. IntroductionHistorically, weather forecasting has relied on NWP, which, despite its precision, suffers from high computational demands." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-04-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-25T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting"/>
+<meta name="twitter:description" content="The advent of artificial intelligence (AI) in weather forecasting marks a pivotal shift in meteorological sciences, combining traditional numerical weather prediction (NWP) methods with advanced machine learning techniques. Pangu-Weather, a large AI model, enhances medium-range global weather forecasting through its innovative 3D neural network architecture, highlighting significant improvements over existing methods in accuracy and computational efficiency.
+1. IntroductionHistorically, weather forecasting has relied on NWP, which, despite its precision, suffers from high computational demands."/>
+      <meta name="twitter:site" content="@AriesChen_UPC"/>
+<meta
+  name="application-name"
+  content="AriesChen&#39;s Blog"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="AriesChen&#39;s Blog"
+/>
+
+<meta name="theme-color" content="#f8f8f8" /><meta name="twitter:creator" content="@AriesChen_UPC" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="canonical" href="https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/" /><link rel="prev" href="https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/" /><link rel="next" href="https://AriesChen-UPC.github.io/post/arieschen-preview/" />
+<link
+      rel="stylesheet"
+      href="/css/main.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/lib/normalize/normalize.min.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/color.css"
+      
+    /><link
+      rel="stylesheet"
+      href="/css/style.min.css"
+      
+    /><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/fontawesome-free/all.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/fontawesome-free/all.min.css"
+        
+    /></noscript><link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/lib/animate/animate.min.css"
+      
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="/lib/animate/animate.min.css"
+        
+    /></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/"
+        },"genre": "post","keywords": "AI, Transformers, Weather","wordcount":  952 ,
+        "url": "https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/","datePublished": "2024-04-25T00:00:00+00:00","dateModified": "2024-04-25T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "AriesChen"},"author": {
+                "@type": "Person",
+                "name": "AriesChen"
+            },"description": ""
+    }
+    </script></head>
+
+  <body
+    header-desktop=""
+    header-mobile=""
+  ><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+    </div>
+    <div class="menu">
+      <div class="menu-inner"><a
+            class="menu-item"
+            href="/post/"
+            
+          > Article
+            </a><a
+            class="menu-item"
+            href="/tags/"
+            
+          > Tags
+            </a><a
+            class="menu-item"
+            href="/categories/"
+            
+          > Categories
+            </a><a
+            class="menu-item"
+            href="/about/"
+            
+              title="About"
+            
+          > About
+            </a><a
+            class="menu-item
+              active
+            "
+            href="/"
+            
+          > docs
+            </a><span class="menu-item delimiter"></span><a
+            href="javascript:void(0);"
+            class="menu-item theme-switch"
+            title="Switch Theme"
+          >
+            <i class="fas fa-adjust fa-fw"></i>
+          </a></div>
+    </div>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="AriesChen&#39;s Blog">AriesChen&#39;s Blog</a>
+      </div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="menu" id="menu-mobile"><a
+          class="menu-item"
+          href="/post/"
+          title=""
+          
+        >Article</a><a
+          class="menu-item"
+          href="/tags/"
+          title=""
+          
+        >Tags</a><a
+          class="menu-item"
+          href="/categories/"
+          title=""
+          
+        >Categories</a><a
+          class="menu-item"
+          href="/about/"
+          title="About"
+          
+        >About</a><a
+          class="menu-item"
+          href="/"
+          title=""
+          
+        >docs</a><a
+          href="javascript:void(0);"
+          class="menu-item theme-switch"
+          title="Switch Theme"
+        >
+          <i class="fas fa-adjust fa-fw"></i>
+        </a></div>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+        <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting</h1><div class="content" id="content"><p>The advent of artificial intelligence (AI) in weather forecasting marks a pivotal shift in meteorological sciences, combining traditional numerical weather prediction (NWP) methods with advanced machine learning techniques. <strong>Pangu-Weather</strong>, a large AI model, enhances medium-range global weather forecasting through its innovative 3D neural network architecture, highlighting significant improvements over existing methods in accuracy and computational efficiency.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://raw.githubusercontent.com/AriesChen-UPC/AriesChen-UPC/main/Blog/DALL%C2%B7E%202024-04-24%2014.56.24%20-%20A%20conceptual%20visualization%20of%20Pangu-Weather%2C%20an%20advanced%20AI%20model%20for%20weather%20forecasting%2C%20showcasing%20its%203D%20neural%20network%20architecture.%20The%20image%20de.webp"
+    srcset="https://raw.githubusercontent.com/AriesChen-UPC/AriesChen-UPC/main/Blog/DALL%C2%B7E%202024-04-24%2014.56.24%20-%20A%20conceptual%20visualization%20of%20Pangu-Weather%2C%20an%20advanced%20AI%20model%20for%20weather%20forecasting%2C%20showcasing%20its%203D%20neural%20network%20architecture.%20The%20image%20de.webp,
+        https://raw.githubusercontent.com/AriesChen-UPC/AriesChen-UPC/main/Blog/DALL%C2%B7E%202024-04-24%2014.56.24%20-%20A%20conceptual%20visualization%20of%20Pangu-Weather%2C%20an%20advanced%20AI%20model%20for%20weather%20forecasting%2C%20showcasing%20its%203D%20neural%20network%20architecture.%20The%20image%20de.webp 1.5x,
+        https://raw.githubusercontent.com/AriesChen-UPC/AriesChen-UPC/main/Blog/DALL%C2%B7E%202024-04-24%2014.56.24%20-%20A%20conceptual%20visualization%20of%20Pangu-Weather%2C%20an%20advanced%20AI%20model%20for%20weather%20forecasting%2C%20showcasing%20its%203D%20neural%20network%20architecture.%20The%20image%20de.webp 2x"
+    title="https://raw.githubusercontent.com/AriesChen-UPC/AriesChen-UPC/main/Blog/DALL%C2%B7E%202024-04-24%2014.56.24%20-%20A%20conceptual%20visualization%20of%20Pangu-Weather%2C%20an%20advanced%20AI%20model%20for%20weather%20forecasting%2C%20showcasing%20its%203D%20neural%20network%20architecture.%20The%20image%20de.webp"
+    
+    
+  /></figure></p>
+<h3 id="1-introduction" class="headerLink">
+    <a href="#1-introduction" class="header-mark"></a>1. Introduction</h3><p>Historically, weather forecasting has relied on NWP, which, despite its precision, suffers from high computational demands. Recent advancements in AI have opened new avenues for enhancing forecast speed and efficiency. Pangu-Weather integrates these advancements, employing a three-dimensional deep network equipped with Earth-specific priors and a hierarchical temporal aggregation strategy, achieving unprecedented forecasting accuracy and speed.</p>
+<p><!-- raw HTML omitted -->Pangu-Weather utilizes a 3D Earth-specific transformer (3DEST) architecture that conceptualizes weather data in three dimensions—longitude, latitude, and altitude. This structure allows for a better capture of the intricate dynamics of atmospheric variables across different layers of the atmosphere. The model&rsquo;s encoder-decoder framework, derived from the Swin Transformer, efficiently processes large datasets, significantly reducing computation time compared to traditional NWP models.<!-- raw HTML omitted --></p>
+<h3 id="2-forecasting-performance" class="headerLink">
+    <a href="#2-forecasting-performance" class="header-mark"></a>2. Forecasting Performance</h3><p>Trained on 39 years of comprehensive global weather data, Pangu-Weather leverages reanalysis data to simulate and predict weather conditions accurately. Various data augmentation techniques were employed to enhance the model&rsquo;s generalizability and prevent overfitting, ensuring robust performance across diverse atmospheric phenomena.</p>
+<p>Pangu-Weather has demonstrated superior performance in deterministic forecasts, especially in tracking tropical cyclones and predicting extreme weather events. Its ability to deliver high-accuracy forecasts significantly faster than the best available NWP systems marks a substantial advancement in meteorological forecasting.</p>
+<h4 id="21-data-prepare" class="headerLink">
+    <a href="#21-data-prepare" class="header-mark"></a>2.1 Data Prepare</h4><p>It&rsquo;s crucial to gather the right datasets. Here&rsquo;s a brief guide to help you get started:</p>
+<ol>
+<li>
+<p><strong>Near-Surface Data (2D)</strong>:
+This dataset is essential for capturing surface-level atmospheric phenomena. It includes four key variables:</p>
+<ul>
+<li><strong>Mean Sea Level Pressure (MSLP)</strong>: This measures the atmospheric pressure adjusted to sea level, crucial for understanding weather patterns.</li>
+<li><strong>10-meter U-Wind Component (U10)</strong>: Represents the east-west component of wind speed at 10 meters above the ground.</li>
+<li><strong>10-meter V-Wind Component (V10)</strong>: Captures the north-south wind component at the same elevation.</li>
+<li><strong>2-meter Temperature (T2M)</strong>: This is the air temperature recorded at two meters above the ground, giving insights into ground-level thermal conditions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Upper-Air Data (3D)</strong>:
+For a comprehensive analysis of the atmospheric profile, you&rsquo;ll need data from multiple altitudes. This dataset consists of five variables across thirteen pressure levels ranging from 1000hPa to 50hPa:</p>
+<ul>
+<li><strong>Geopotential Height (Z)</strong>: This helps determine the height of pressure surfaces, which is crucial for understanding large-scale motion in the atmosphere.</li>
+<li><strong>Specific Humidity (Q)</strong>: Indicates the water vapor content in the air.</li>
+<li><strong>Temperature (T)</strong>: Air temperature at various altitudes, essential for modeling weather dynamics.</li>
+<li><strong>U-Wind Component (U)</strong> and <strong>V-Wind Component (V)</strong>: These represent the east-west and north-south components of wind speed across different atmospheric levels.</li>
+</ul>
+</li>
+</ol>
+<h4 id="22-model-inference" class="headerLink">
+    <a href="#22-model-inference" class="header-mark"></a>2.2 Model Inference</h4><p>In setting up a weather forecasting system, you need to organize your workspace into four key segments: an input data directory (<code>input_data</code>), an output data directory (<code>output_data</code>), the model files, and the model inference scripts.</p>
+<p>The core of our system is a suite of predictive models, each tailored to different forecasting needs:</p>
+<ul>
+<li><strong>Hourly Forecast Model</strong>: For those who need up-to-the-hour predictions, our 1-hour model (<code>pangu_weather_1.onnx</code>) provides timely updates.</li>
+<li><strong>Three-Hour Forecast Model</strong>: Perfect for short-range planning, the 3-hour model (<code>pangu_weather_3.onnx</code>) offers a broader outlook.</li>
+<li><strong>Six-Hour Forecast Model</strong>: Extending our foresight, the 6-hour model (<code>pangu_weather_6.onnx</code>) helps in anticipating changes throughout the day.</li>
+<li><strong>Daily Forecast Model</strong>: Our most expansive, the 24-hour model (<code>pangu_weather_24.onnx</code>), is ideal for day-ahead planning and activities.</li>
+</ul>
+<pre tabindex="0"><code>├── root
+│   ├── input_data
+│   │   ├── input_surface.npy
+│   │   ├── input_upper.npy
+│   ├── output_data
+│   ├── pangu_weather_1.onnx
+│   ├── pangu_weather_3.onnx
+│   ├── pangu_weather_6.onnx
+│   ├── pangu_weather_24.onnx
+│   ├── inference_cpu.py
+│   ├── inference_gpu.py
+│   ├── inference_iterative.py
+</code></pre><h5 id="exploring-weather-forecasting-the-24-hour-model" class="headerLink">
+    <a href="#exploring-weather-forecasting-the-24-hour-model" class="header-mark"></a>Exploring Weather Forecasting: The 24-Hour Model</h5><p>Weather forecasting has greatly advanced with technologies like the 24-hour model, which improves the prediction of imminent weather patterns. This model focuses on two key types of data: <strong>surface</strong> and <strong>upper-level</strong>. Surface data covers essential information such as temperature and wind speed at Earth&rsquo;s surface, crucial for daily decisions like travel and outdoor activities. Upper-level data, meanwhile, helps in understanding atmospheric phenomena higher up, which influence broader weather systems.</p>
+<p>In our recent analysis, we zeroed in on a specific region, selecting crucial variables to demonstrate how effectively this model predicts both ground-level and atmospheric conditions. This approach not only provides a snapshot of anticipated weather changes but also showcases the model&rsquo;s accuracy and utility in practical scenarios. This streamlined forecasting technique empowers us to make informed decisions, enhancing both daily life and long-term planning.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/T2M.png?raw=true"
+    srcset="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/T2M.png?raw=true,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/T2M.png?raw=true 1.5x,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/T2M.png?raw=true 2x"
+    title="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/T2M.png?raw=true"
+    
+    
+  /></figure></p>
+<p>To evaluate the predictive accuracy of the model, we compared its forecasts against actual observational data recorded 24 hours later. <!-- raw HTML omitted -->The results revealed an average error of 0.04 degrees Celsius, with a standard deviation of 1.28 degrees Celsius.<!-- raw HTML omitted --> The minimum deviation recorded was -8.13 degrees Celsius, while the maximum deviation was 29.19 degrees Celsius. From these comparisons, it is evident that the model demonstrates high predictive accuracy, making it highly valuable for practical applications.</p>
+<p><figure><img
+    
+    loading="lazy"
+    src="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-04-25%20at%2009.37.21@2x.png?raw=true"
+    srcset="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-04-25%20at%2009.37.21@2x.png?raw=true,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-04-25%20at%2009.37.21@2x.png?raw=true 1.5x,
+        https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-04-25%20at%2009.37.21@2x.png?raw=true 2x"
+    title="https://github.com/AriesChen-UPC/AriesChen-UPC/blob/main/Blog/CleanShot%202024-04-25%20at%2009.37.21@2x.png?raw=true"
+    
+    
+  /></figure></p>
+<h3 id="3-conclusion" class="headerLink">
+    <a href="#3-conclusion" class="header-mark"></a>3. Conclusion</h3><p>One of the standout features of Pangu-Weather is its computational efficiency. The model performs forecasts more than 10,000 times faster than traditional NWP systems, enabling real-time weather forecasting and rapid updates, which are crucial during severe weather events.</p>
+<p>While Pangu-Weather represents a significant step forward, ongoing work aims to expand its capabilities, including refining its ensemble forecasting techniques and extending its predictive accuracy over longer time horizons. Future iterations will also explore the integration of additional atmospheric variables and the potential for real-time data assimilation.</p>
+<p>Pangu-Weather epitomizes the potential of AI in revolutionizing weather forecasting. By integrating advanced AI techniques with traditional meteorological methods, it offers a faster, more accurate alternative to existing forecasting models, promising substantial benefits for disaster preparedness, agriculture, and daily weather prediction.</p>
+</div></div></div>
+      </main><footer class="footer">
+    <div class="footer-container"><div class="footer-line">
+          Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.124.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+        </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder"
+            >&nbsp;<a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ></a
+            ></span
+          ></div>
+      <div class="footer-line"></div>
+      <div class="footer-line"></div>
+    </div></footer></div>
+
+    <div id="fixed-buttons"><a
+        href="#back-to-top"
+        id="back-to-top-button"
+        class="fixed-button"
+        title="Back to Top"
+      >
+        <i class="fas fa-arrow-up fa-fw"></i>
+      </a><a
+        href="#"
+        id="view-comments"
+        class="fixed-button"
+        title="View Comments"
+      >
+        <i class="fas fa-comment fa-fw"></i>
+      </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script
+    type="text/javascript"
+    src="/lib/clipboard/clipboard.min.js"
+    
+  ></script><script
+    type="text/javascript"
+    src="/js/theme.min.js"
+    
+      defer
+    
+  ></script></div>
+</body>
+</html>

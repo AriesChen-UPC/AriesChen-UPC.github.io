@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Info - Category - AriesChen&#39;s Blog</title>
-        <link>http://localhost:1313/categories/info/</link>
+        <link>https://AriesChen-UPC.github.io/categories/info/</link>
         <description>Info - Category - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/info/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/categories/info/" rel="self" type="application/rss+xml" /><item>
     <title>Aries Chen</title>
-    <link>http://localhost:1313/post/arieschen-preview/</link>
-    <pubDate>Tue, 26 Mar 2024 09:00:00 &#43;0800</pubDate><author>
+    <link>https://AriesChen-UPC.github.io/post/arieschen-preview/</link>
+    <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/arieschen-preview/</guid>
-    <description><![CDATA[Hello! My name is Aries Chen, and I&rsquo;m a dedicated student at the China University of Petroleum, specializing in Geophysics. I&rsquo;ve recently taken a keen interest in the realm of Artificial Intelligence. I&rsquo;m currently engaged in AI-related research, focusing on how these advanced technologies can be applied within geophysical studies to unveil new insights and efficiencies.
-Outside the academic world, I have a profound passion for literature and endurance sports, particularly Marathon.]]></description>
+    </author><guid>https://AriesChen-UPC.github.io/post/arieschen-preview/</guid>
+    <description><![CDATA[Hello! My name is Aries Chen, and I am a committed student at the China University of Petroleum , where I major in Geophysics. Recently, I have developed a deep interest in Artificial Intelligence. I am actively involved in AI research, exploring how these cutting-edge technologies can enhance geophysical studies by providing new insights and improving efficiencies.
+Beyond academia, I am deeply passionate about literature and endurance sports, especially marathons. Reading opens up various worlds and ideas for me, expanding my perspective and stimulating my creativity.]]></description>
 </item></channel>
 </rss>

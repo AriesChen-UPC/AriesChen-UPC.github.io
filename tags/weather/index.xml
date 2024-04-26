@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Weather - Tag - AriesChen&#39;s Blog</title>
+        <link>https://AriesChen-UPC.github.io/tags/weather/</link>
+        <description>Weather - Tag - AriesChen&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/weather/" rel="self" type="application/rss+xml" /><item>
+    <title>Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</link>
+    <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</guid>
+    <description><![CDATA[The advent of artificial intelligence (AI) in weather forecasting marks a pivotal shift in meteorological sciences, combining traditional numerical weather prediction (NWP) methods with advanced machine learning techniques. Pangu-Weather, a large AI model, enhances medium-range global weather forecasting through its innovative 3D neural network architecture, highlighting significant improvements over existing methods in accuracy and computational efficiency.
+1. IntroductionHistorically, weather forecasting has relied on NWP, which, despite its precision, suffers from high computational demands.]]></description>
+</item></channel>
+</rss>

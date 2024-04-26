@@ -1,49 +1,49 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>MATLAB - Tag - AriesChen&#39;s Blog</title>
-        <link>http://localhost:1313/tags/matlab/</link>
+        <link>https://AriesChen-UPC.github.io/tags/matlab/</link>
         <description>MATLAB - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/matlab/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/matlab/" rel="self" type="application/rss+xml" /><item>
     <title>Extract Lidar and Camera Data from Rosbag File with MATLAB</title>
-    <link>http://localhost:1313/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</link>
     <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/extract-lidar-and-camera-data-from-rosbag-file-with-matlab/</guid>
     <description><![CDATA[ROS (Robot Operating System) provides libraries and tools to help software developers create robot applications. It provides hardware abstraction, device drivers, libraries, visualizers, message-passing, package management, and more. ROS is licensed under an open source, BSD license.
 Requirement:
 Lidar Toolbox ROS Toolbox Optional:
 Example data: The data is collected from ssl_slam, which relates to the article &lt;Lightweight 3-D Localization and Mapping for Solid-State LiDAR (Intel Realsense L515 as an example)&gt;.]]></description>
 </item><item>
     <title>Add Interactive Tasks to a Live Script in MATLAB</title>
-    <link>http://localhost:1313/post/docs/add-interactive-tasks-to-a-live-script/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/add-interactive-tasks-to-a-live-script/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/add-interactive-tasks-to-a-live-script/</guid>
     <description><![CDATA[Live Editor tasks are simple point-and-click interfaces that can be added to a live script to perform a specific set of operations. You can add tasks to live scripts to explore parameters and automatically generate code. Use tasks to reduce development time, errors, and time spent plotting.
 We are familiar with Jupyter notebook in Python. In MATLAB, there are live scripts. MATLAB live scripts and live functions are interactive documents that combine MATLAB code with formatted text, equations, and images in a single environment called the Live Editor.]]></description>
 </item><item>
     <title>Dictionary Data Type in MATLAB</title>
-    <link>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</link>
     <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/dictionary-data-type-in-matlab/</guid>
     <description><![CDATA[A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.
 Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.]]></description>
 </item><item>
     <title>Using MATLAB for AprilTag detecting</title>
-    <link>http://localhost:1313/post/docs/using-matlab-for-apriltag-detecting/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</link>
     <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/using-matlab-for-apriltag-detecting/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</guid>
     <description><![CDATA[AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.
 Image from University of Michigan
 AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag.]]></description>
 </item><item>
     <title>Mapping toolbox in MATLAB for easily plotting and analysis</title>
-    <link>http://localhost:1313/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</link>
     <pubDate>Wed, 01 Jun 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</guid>
     <description><![CDATA[Mapping Toolbox™ provides algorithms and functions for transforming geographic data and creating map displays. You can visualize your data in a geographic context, build map displays from more than 60 map projections, and transform data from a variety of sources into a consistent geographic coordinate system.
 As we all know, MATLAB provides a lot of toolboxes like Statistics and Machine Learning Toolbox, Signal Processing Toolbox™, Mapping Toolbox™ e.g. These toolboxes have many algorithms and functions for ease of our daily work and study.]]></description>
 </item></channel>

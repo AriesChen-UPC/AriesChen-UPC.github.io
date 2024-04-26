@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>AprilTag - Tag - AriesChen&#39;s Blog</title>
-        <link>http://localhost:1313/tags/apriltag/</link>
+        <link>https://AriesChen-UPC.github.io/tags/apriltag/</link>
         <description>AprilTag - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/apriltag/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/apriltag/" rel="self" type="application/rss+xml" /><item>
     <title>Using MATLAB for AprilTag detecting</title>
-    <link>http://localhost:1313/post/docs/using-matlab-for-apriltag-detecting/</link>
+    <link>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</link>
     <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>http://localhost:1313/post/docs/using-matlab-for-apriltag-detecting/</guid>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/using-matlab-for-apriltag-detecting/</guid>
     <description><![CDATA[AprilTags are conceptually similar to QR Codes, in that they are a type of two-dimensional bar code. However, they are designed to encode far smaller data payloads (between 4 and 12 bits), allowing them to be detected more robustly and from longer ranges.
 Image from University of Michigan
 AprilTag is a visual fiducial system popular in robotics research. When we do some work related to ROS or something needed to be labeled, there is AprilTag.]]></description>
