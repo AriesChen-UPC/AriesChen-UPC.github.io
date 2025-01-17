@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Spotify - Tag - AriesChen&#39;s Blog</title>
+        <link>https://AriesChen-UPC.github.io/tags/spotify/</link>
+        <description>Spotify - Tag - AriesChen&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/spotify/" rel="self" type="application/rss+xml" /><item>
+    <title>打造 Spotify 播客智能助手：基于 Claude MCP 和 Projects 的深度分析工具</title>
+    <link>https://AriesChen-UPC.github.io/post/docs/%E6%89%93%E9%80%A0-spotify-%E6%92%AD%E5%AE%A2%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B%E5%9F%BA%E4%BA%8E-claude-mcp-%E5%92%8C-projects-%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>https://AriesChen-UPC.github.io/post/docs/%E6%89%93%E9%80%A0-spotify-%E6%92%AD%E5%AE%A2%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B%E5%9F%BA%E4%BA%8E-claude-mcp-%E5%92%8C-projects-%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7/</guid>
+    <description><![CDATA[背景及痛点分析随着播客内容的快速增长，Spotify 虽然推出了文稿功能，但用户在使用过程中仍面临诸多挑战。网页端的文稿展示方式使得用户难以进]]></description>
+</item></channel>
+</rss>

@@ -3,7 +3,42 @@
         <title>Tags - Tag - AriesChen&#39;s Blog</title>
         <link>https://AriesChen-UPC.github.io/tags/</link>
         <description>Tags - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Claude</title>
+    <link>https://AriesChen-UPC.github.io/tags/claude/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/claude/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>MCP</title>
+    <link>https://AriesChen-UPC.github.io/tags/mcp/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/mcp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Podcast</title>
+    <link>https://AriesChen-UPC.github.io/tags/podcast/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/podcast/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Projects</title>
+    <link>https://AriesChen-UPC.github.io/tags/projects/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/projects/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Spotify</title>
+    <link>https://AriesChen-UPC.github.io/tags/spotify/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://AriesChen-UPC.github.io/tags/spotify/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>AI</title>
     <link>https://AriesChen-UPC.github.io/tags/ai/</link>
     <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
@@ -37,41 +72,6 @@
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
     </author><guid>https://AriesChen-UPC.github.io/tags/python/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Microtremor</title>
-    <link>https://AriesChen-UPC.github.io/tags/microtremor/</link>
-    <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/microtremor/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>NeRF</title>
-    <link>https://AriesChen-UPC.github.io/tags/nerf/</link>
-    <pubDate>Thu, 15 Jun 2023 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/nerf/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Geophysics</title>
-    <link>https://AriesChen-UPC.github.io/tags/geophysics/</link>
-    <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
-        <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/geophysics/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Info</title>
-    <link>https://AriesChen-UPC.github.io/tags/info/</link>
-    <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
-        <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/info/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Marathon</title>
-    <link>https://AriesChen-UPC.github.io/tags/marathon/</link>
-    <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
-        <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/marathon/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
