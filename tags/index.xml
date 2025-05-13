@@ -1,77 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - AriesChen&#39;s Blog</title>
-        <link>https://AriesChen-UPC.github.io/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Tags - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
     <title>3DGS</title>
-    <link>https://AriesChen-UPC.github.io/tags/3dgs/</link>
+    <link>http://localhost:1313/tags/3dgs/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/3dgs/</guid>
+    </author><guid>http://localhost:1313/tags/3dgs/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>EDGS</title>
-    <link>https://AriesChen-UPC.github.io/tags/edgs/</link>
+    <link>http://localhost:1313/tags/edgs/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/edgs/</guid>
+    </author><guid>http://localhost:1313/tags/edgs/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Projects</title>
-    <link>https://AriesChen-UPC.github.io/tags/projects/</link>
+    <link>http://localhost:1313/tags/projects/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/projects/</guid>
+    </author><guid>http://localhost:1313/tags/projects/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Claude</title>
-    <link>https://AriesChen-UPC.github.io/tags/claude/</link>
+    <link>http://localhost:1313/tags/claude/</link>
     <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/claude/</guid>
+    </author><guid>http://localhost:1313/tags/claude/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>MCP</title>
-    <link>https://AriesChen-UPC.github.io/tags/mcp/</link>
+    <link>http://localhost:1313/tags/mcp/</link>
     <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/mcp/</guid>
+    </author><guid>http://localhost:1313/tags/mcp/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Podcast</title>
-    <link>https://AriesChen-UPC.github.io/tags/podcast/</link>
+    <link>http://localhost:1313/tags/podcast/</link>
     <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/podcast/</guid>
+    </author><guid>http://localhost:1313/tags/podcast/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Spotify</title>
-    <link>https://AriesChen-UPC.github.io/tags/spotify/</link>
+    <link>http://localhost:1313/tags/spotify/</link>
     <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/spotify/</guid>
+    </author><guid>http://localhost:1313/tags/spotify/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AI</title>
-    <link>https://AriesChen-UPC.github.io/tags/ai/</link>
+    <link>http://localhost:1313/tags/ai/</link>
     <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/ai/</guid>
+    </author><guid>http://localhost:1313/tags/ai/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Transformers</title>
-    <link>https://AriesChen-UPC.github.io/tags/transformers/</link>
+    <link>http://localhost:1313/tags/transformers/</link>
     <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/transformers/</guid>
+    </author><guid>http://localhost:1313/tags/transformers/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Weather</title>
-    <link>https://AriesChen-UPC.github.io/tags/weather/</link>
+    <link>http://localhost:1313/tags/weather/</link>
     <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/tags/weather/</guid>
+    </author><guid>http://localhost:1313/tags/weather/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

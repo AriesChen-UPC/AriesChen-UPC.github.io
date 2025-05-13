@@ -1,22 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Transformers - Tag - AriesChen&#39;s Blog</title>
-        <link>https://AriesChen-UPC.github.io/tags/transformers/</link>
+        <link>http://localhost:1313/tags/transformers/</link>
         <description>Transformers - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/transformers/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/transformers/" rel="self" type="application/rss+xml" /><item>
     <title>Pangu-Weather: A New Frontier in AI-Based Global Weather Forecasting</title>
-    <link>https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</link>
+    <link>http://localhost:1313/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</link>
     <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>https://AriesChen-UPC.github.io/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</guid>
+    </author><guid>http://localhost:1313/post/docs/pangu-weather-a-new-frontier-in-ai-based-global-weather-forecasting/</guid>
     <description><![CDATA[The advent of artificial intelligence (AI) in weather forecasting marks a pivotal shift in meteorological sciences, combining traditional numerical weather prediction (NWP) methods with advanced machine learning techniques. Pangu-Weather, a large AI model, enhances medium-range global weather forecasting through its innovative 3D neural network architecture, highlighting significant improvements over existing methods in accuracy and computational efficiency.
 1. IntroductionHistorically, weather forecasting has relied on NWP, which, despite its precision, suffers from high computational demands.]]></description>
 </item><item>
     <title>Harnessing Vision Transformers for Geological Radar Image Classification</title>
-    <link>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</link>
+    <link>http://localhost:1313/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>https://AriesChen-UPC.github.io/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</guid>
+    </author><guid>http://localhost:1313/post/docs/harnessing-vision-transformers-for-geological-radar-image-classification/</guid>
     <description><![CDATA[Geological exploration has long been a domain of meticulous study and analysis, where the subsurface secrets of the Earth are decoded from images that are as complex as they are enigmatic. One of the most powerful tools in this quest has been Ground Penetrating Radar (GPR), a technology that peers into the depths of the geological layers without a single shovel strike. But the interpretation of GPR data has remained a highly specialized skill — until now.]]></description>
 </item></channel>
 </rss>

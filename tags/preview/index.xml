@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Preview - Tag - AriesChen&#39;s Blog</title>
-        <link>https://AriesChen-UPC.github.io/tags/preview/</link>
+        <link>http://localhost:1313/tags/preview/</link>
         <description>Preview - Tag - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/tags/preview/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/preview/" rel="self" type="application/rss+xml" /><item>
     <title>Aries Chen</title>
-    <link>https://AriesChen-UPC.github.io/post/arieschen-preview/</link>
+    <link>http://localhost:1313/post/arieschen-preview/</link>
     <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
         <name>AriesChen</name>
-    </author><guid>https://AriesChen-UPC.github.io/post/arieschen-preview/</guid>
+    </author><guid>http://localhost:1313/post/arieschen-preview/</guid>
     <description><![CDATA[Hello! My name is Aries Chen, and I am a committed student at the China University of Petroleum , where I major in Geophysics. Recently, I have developed a deep interest in Artificial Intelligence. I am actively involved in AI research, exploring how these cutting-edge technologies can enhance geophysical studies by providing new insights and improving efficiencies.
 Beyond academia, I am deeply passionate about literature and endurance sports, especially marathons. Reading opens up various worlds and ideas for me, expanding my perspective and stimulating my creativity.]]></description>
 </item></channel>

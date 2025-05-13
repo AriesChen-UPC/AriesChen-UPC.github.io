@@ -1,35 +1,35 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Categories - Category - AriesChen&#39;s Blog</title>
-        <link>https://AriesChen-UPC.github.io/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - AriesChen&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://AriesChen-UPC.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Development</title>
-    <link>https://AriesChen-UPC.github.io/categories/development/</link>
+    <link>http://localhost:1313/categories/development/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/categories/development/</guid>
+    </author><guid>http://localhost:1313/categories/development/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Docs</title>
-    <link>https://AriesChen-UPC.github.io/categories/docs/</link>
+    <link>http://localhost:1313/categories/docs/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/categories/docs/</guid>
+    </author><guid>http://localhost:1313/categories/docs/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Index</title>
-    <link>https://AriesChen-UPC.github.io/categories/index/</link>
+    <link>http://localhost:1313/categories/index/</link>
     <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/categories/index/</guid>
+    </author><guid>http://localhost:1313/categories/index/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Info</title>
-    <link>https://AriesChen-UPC.github.io/categories/info/</link>
+    <link>http://localhost:1313/categories/info/</link>
     <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
-    </author><guid>https://AriesChen-UPC.github.io/categories/info/</guid>
+    </author><guid>http://localhost:1313/categories/info/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
