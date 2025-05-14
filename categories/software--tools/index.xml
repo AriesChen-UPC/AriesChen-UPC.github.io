@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Software &amp; Tools - Category - AriesChen&#39;s Blog</title>
+        <link>http://localhost:1313/categories/software--tools/</link>
+        <description>Software &amp; Tools - Category - AriesChen&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/software--tools/" rel="self" type="application/rss+xml" /><item>
+    <title>Dictionary Data Type in MATLAB</title>
+    <link>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</link>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>http://localhost:1313/post/docs/dictionary-data-type-in-matlab/</guid>
+    <description><![CDATA[A dictionary is useful for a fast lookup of values in a larger set. A dictionary is a map that stores data as values, which can be accessed using corresponding unique keys. Each pair of keys and values is an entry.
+Before MATLAB R2022b, there is not an official dictionary data type. Though you can use Map Containers as an alternative. It is not very convenient in our daily work.]]></description>
+</item><item>
+    <title>Mapping toolbox in MATLAB for easily plotting and analysis</title>
+    <link>http://localhost:1313/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</link>
+    <pubDate>Wed, 01 Jun 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>http://localhost:1313/post/docs/mapping-toolbox-in-matlab-for-easily-plotting-and-analysis/</guid>
+    <description><![CDATA[Mapping Toolbox™ provides algorithms and functions for transforming geographic data and creating map displays. You can visualize your data in a geographic context, build map displays from more than 60 map projections, and transform data from a variety of sources into a consistent geographic coordinate system.
+As we all know, MATLAB provides a lot of toolboxes like Statistics and Machine Learning Toolbox, Signal Processing Toolbox™, Mapping Toolbox™ e.g. These toolboxes have many algorithms and functions for ease of our daily work and study.]]></description>
+</item></channel>
+</rss>

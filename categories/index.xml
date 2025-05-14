@@ -4,25 +4,46 @@
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - AriesChen&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Development</title>
-    <link>http://localhost:1313/categories/development/</link>
+    <title>Computer Vision &amp; Image Processing</title>
+    <link>http://localhost:1313/categories/computer-vision--image-processing/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://localhost:1313/categories/development/</guid>
+    </author><guid>http://localhost:1313/categories/computer-vision--image-processing/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Natural Language Processing (NLP) &amp; Large Language Models (LLM)</title>
+    <link>http://localhost:1313/categories/natural-language-processing-nlp--large-language-models-llm/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/natural-language-processing-nlp--large-language-models-llm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AI Applications</title>
+    <link>http://localhost:1313/categories/ai-applications/</link>
+    <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/ai-applications/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Transformers</title>
+    <link>http://localhost:1313/categories/transformers/</link>
+    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/transformers/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Deep Learning</title>
+    <link>http://localhost:1313/categories/deep-learning/</link>
+    <pubDate>Tue, 20 Dec 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/deep-learning/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Docs</title>
     <link>http://localhost:1313/categories/docs/</link>
-    <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
     </author><guid>http://localhost:1313/categories/docs/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Index</title>
-    <link>http://localhost:1313/categories/index/</link>
-    <pubDate>Thu, 25 Apr 2024 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>http://localhost:1313/categories/index/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Info</title>
@@ -30,6 +51,20 @@
     <pubDate>Sat, 01 Oct 2022 09:00:00 &#43;0800</pubDate><author>
         <name>Author</name>
     </author><guid>http://localhost:1313/categories/info/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Robotics &amp; Perception</title>
+    <link>http://localhost:1313/categories/robotics--perception/</link>
+    <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/robotics--perception/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Software &amp; Tools</title>
+    <link>http://localhost:1313/categories/software--tools/</link>
+    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/software--tools/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
