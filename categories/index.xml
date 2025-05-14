@@ -4,18 +4,32 @@
         <link>http://localhost:1313/categories/</link>
         <description>Categories - Category - AriesChen&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Computer Vision &amp; Image Processing</title>
-    <link>http://localhost:1313/categories/computer-vision--image-processing/</link>
+    <title>Computer Vision</title>
+    <link>http://localhost:1313/categories/computer-vision/</link>
     <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://localhost:1313/categories/computer-vision--image-processing/</guid>
+    </author><guid>http://localhost:1313/categories/computer-vision/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Natural Language Processing (NLP) &amp; Large Language Models (LLM)</title>
-    <link>http://localhost:1313/categories/natural-language-processing-nlp--large-language-models-llm/</link>
+    <title>Image Processing</title>
+    <link>http://localhost:1313/categories/image-processing/</link>
+    <pubDate>Wed, 30 Apr 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/image-processing/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>LLM</title>
+    <link>http://localhost:1313/categories/llm/</link>
     <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://localhost:1313/categories/natural-language-processing-nlp--large-language-models-llm/</guid>
+    </author><guid>http://localhost:1313/categories/llm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>NLP</title>
+    <link>http://localhost:1313/categories/nlp/</link>
+    <pubDate>Thu, 16 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+        <name>Author</name>
+    </author><guid>http://localhost:1313/categories/nlp/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>AI Applications</title>
@@ -53,18 +67,11 @@
     </author><guid>http://localhost:1313/categories/info/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>Robotics &amp; Perception</title>
-    <link>http://localhost:1313/categories/robotics--perception/</link>
+    <title>Perception</title>
+    <link>http://localhost:1313/categories/perception/</link>
     <pubDate>Sat, 01 Oct 2022 00:00:00 &#43;0000</pubDate><author>
         <name>Author</name>
-    </author><guid>http://localhost:1313/categories/robotics--perception/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Software &amp; Tools</title>
-    <link>http://localhost:1313/categories/software--tools/</link>
-    <pubDate>Thu, 15 Sep 2022 00:00:00 &#43;0000</pubDate><author>
-        <name>Author</name>
-    </author><guid>http://localhost:1313/categories/software--tools/</guid>
+    </author><guid>http://localhost:1313/categories/perception/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
