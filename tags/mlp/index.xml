@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MLP - Tag - AriesChen&#39;s Blog</title>
+        <link>http://localhost:1313/tags/mlp/</link>
+        <description>MLP - Tag - AriesChen&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mlp/" rel="self" type="application/rss+xml" /><item>
+    <title>神经辐射场（NeRF）三维重建技术</title>
+    <link>http://localhost:1313/post/docs/%E7%A5%9E%E7%BB%8F%E8%BE%90%E5%B0%84%E5%9C%BAnerf%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA%E6%8A%80%E6%9C%AF/</link>
+    <pubDate>Wed, 06 Sep 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>AriesChen</name>
+    </author><guid>http://localhost:1313/post/docs/%E7%A5%9E%E7%BB%8F%E8%BE%90%E5%B0%84%E5%9C%BAnerf%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA%E6%8A%80%E6%9C%AF/</guid>
+    <description><![CDATA[1. 神经辐射场（NeRF）简介 1.1. 定义NeRF：核心概念及其在三维重建中的意义神经辐射场（Neural Radiance Fields, NeRF）是一种用于高分辨率三维重建和]]></description>
+</item></channel>
+</rss>
