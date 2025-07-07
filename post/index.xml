@@ -20,7 +20,7 @@
       <link>http://localhost:1313/post/docs/edgs%E6%B6%88%E9%99%A4%E8%87%B4%E5%AF%86%E5%8C%96%E4%BB%A5%E5%AE%9E%E7%8E%B0%E9%AB%98%E6%95%88%E4%B8%89%E7%BB%B4%E9%AB%98%E6%96%AF%E6%BA%85%E5%B0%84%E6%94%B6%E6%95%9B%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%A0%94%E7%A9%B6%E8%BF%9B%E5%B1%95%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/docs/edgs%E6%B6%88%E9%99%A4%E8%87%B4%E5%AF%86%E5%8C%96%E4%BB%A5%E5%AE%9E%E7%8E%B0%E9%AB%98%E6%95%88%E4%B8%89%E7%BB%B4%E9%AB%98%E6%96%AF%E6%BA%85%E5%B0%84%E6%94%B6%E6%95%9B%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%A0%94%E7%A9%B6%E8%BF%9B%E5%B1%95%E5%88%86%E6%9E%90/</guid>
-      <description>1. 引言：迈向高效的三维高斯溅射三维高斯溅射（3D Gaussian Splatting, 3DGS）作为一种新兴的三维场景表示与新视角合成技术，近年来在计算机视觉和图形学领域引起</description>
+      <description>三维高斯溅射（3D Gaussian Splatting, 3DGS）作为一种新兴的三维场景表示与新视角合成技术，近年来在计算机视觉和图形学领域引起了广泛关注。该技术通过使用数百</description>
     </item>
     <item>
       <title>打造 Spotify 播客智能助手：基于 Claude MCP 和 Projects 的深度分析工具</title>
@@ -48,7 +48,7 @@
       <link>http://localhost:1313/post/docs/%E7%A5%9E%E7%BB%8F%E8%BE%90%E5%B0%84%E5%9C%BAnerf%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/docs/%E7%A5%9E%E7%BB%8F%E8%BE%90%E5%B0%84%E5%9C%BAnerf%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA%E6%8A%80%E6%9C%AF/</guid>
-      <description>1. 神经辐射场（NeRF）简介 1.1. 定义NeRF：核心概念及其在三维重建中的意义神经辐射场（Neural Radiance Fields, NeRF）是一种用于高分辨率三维重建和</description>
+      <description>神经辐射场（NeRF）神经辐射场（Neural Radiance Fields, NeRF）是一种用于高分辨率三维重建和表示的新颖的隐式方法 。它通过学习一个连续的五维函数来</description>
     </item>
     <item>
       <title>Scene of Microtremor with NeRF</title>
@@ -62,28 +62,28 @@
       <link>http://localhost:1313/post/docs/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%9E%B6%E6%9E%84%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/</link>
       <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/docs/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%9E%B6%E6%9E%84%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/</guid>
-      <description>I. 引言：注意力在序列模型和大型语言模型中的作用 A. 传统序列模型（RNN/LSTM）的局限性在深度学习应用于自然语言处理（NLP）的早期阶段，循</description>
+      <description>简化的自注意力在深入探讨大型语言模型中使用的复杂注意力机制之前，理解一个简化的自注意力（Simplified Self-Attention）版</description>
     </item>
     <item>
       <title>自注意力机制中的查询、键和值</title>
       <link>http://localhost:1313/post/docs/%E8%87%AA%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6%E4%B8%AD%E7%9A%84%E6%9F%A5%E8%AF%A2%E9%94%AE%E5%92%8C%E5%80%BC/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/docs/%E8%87%AA%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6%E4%B8%AD%E7%9A%84%E6%9F%A5%E8%AF%A2%E9%94%AE%E5%92%8C%E5%80%BC/</guid>
-      <description>1. 引言：序列建模的挑战与注意力的兴起序列数据，如自然语言文本、时间序列信号等，在人工智能领域无处不在。有效处理和理解这些序列是许多任务（如机</description>
+      <description>查询、键、值（QKV）自注意力机制的核心是查询（Query）、键（Key）和值（Value）这三个向量。理解它们的角色和相互作用对于掌握自注</description>
     </item>
     <item>
       <title>深度学习中的注意力机制</title>
       <link>http://localhost:1313/post/docs/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/</link>
       <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/docs/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/</guid>
-      <description>I. 深度学习中的注意力机制导论 A. 定义注意力：核心概念与目的注意力机制（Attention Mechanism）是深度学习领域的一项关键技术，它使</description>
+      <description>深度学习中的注意力机制注意力机制（Attention Mechanism）是深度学习领域的一项关键技术，它使模型能够在处理输入数据时，选择性地</description>
     </item>
     <item>
       <title>Transformer 架构深度解析</title>
       <link>http://localhost:1313/post/docs/transformer-%E6%9E%B6%E6%9E%84%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/docs/transformer-%E6%9E%B6%E6%9E%84%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/</guid>
-      <description>摘要 本报告旨在提供对 Transformer 架构的全面、深入的解析。Transformer 作为一种基于自注意力机制的深度学习模型，彻底改变了序列到序列任务的处理方</description>
+      <description>Transformer架构的诞生背景与核心目标序列到序列（Sequence-to-Sequence, Seq2Seq）模型旨在解决将一个输入序</description>
     </item>
     <item>
       <title>卷积神经网络（CNN）架构</title>

@@ -9,6 +9,6 @@
     <pubDate>Sun, 05 Feb 2023 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
     </author><guid>http://localhost:1313/post/docs/%E8%87%AA%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6%E4%B8%AD%E7%9A%84%E6%9F%A5%E8%AF%A2%E9%94%AE%E5%92%8C%E5%80%BC/</guid>
-    <description><![CDATA[1. 引言：序列建模的挑战与注意力的兴起序列数据，如自然语言文本、时间序列信号等，在人工智能领域无处不在。有效处理和理解这些序列是许多任务（如机]]></description>
+    <description><![CDATA[查询、键、值（QKV）自注意力机制的核心是查询（Query）、键（Key）和值（Value）这三个向量。理解它们的角色和相互作用对于掌握自注]]></description>
 </item></channel>
 </rss>

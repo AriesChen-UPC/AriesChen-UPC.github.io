@@ -9,7 +9,7 @@
     <pubDate>Tue, 20 Dec 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
     </author><guid>http://localhost:1313/post/docs/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/</guid>
-    <description><![CDATA[I. 深度学习中的注意力机制导论 A. 定义注意力：核心概念与目的注意力机制（Attention Mechanism）是深度学习领域的一项关键技术，它使]]></description>
+    <description><![CDATA[深度学习中的注意力机制注意力机制（Attention Mechanism）是深度学习领域的一项关键技术，它使模型能够在处理输入数据时，选择性地]]></description>
 </item><item>
     <title>卷积神经网络（CNN）架构</title>
     <link>http://localhost:1313/post/docs/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9Ccnn%E6%9E%B6%E6%9E%84/</link>

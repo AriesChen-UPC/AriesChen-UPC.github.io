@@ -16,6 +16,6 @@
     <pubDate>Wed, 30 Nov 2022 00:00:00 &#43;0000</pubDate><author>
         <name>AriesChen</name>
     </author><guid>http://localhost:1313/post/docs/transformer-%E6%9E%B6%E6%9E%84%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90/</guid>
-    <description><![CDATA[摘要 本报告旨在提供对 Transformer 架构的全面、深入的解析。Transformer 作为一种基于自注意力机制的深度学习模型，彻底改变了序列到序列任务的处理方]]></description>
+    <description><![CDATA[Transformer架构的诞生背景与核心目标序列到序列（Sequence-to-Sequence, Seq2Seq）模型旨在解决将一个输入序]]></description>
 </item></channel>
 </rss>
